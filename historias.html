@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historias de Vida - SJM Bolivia</title>
+
+  <link rel="stylesheet" href="publicaciones.css">
+  <link rel="stylesheet" href="historias.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html" aria-label="Ir al inicio">
+        <img src="sjm.png" alt="SJM Bolivia">
+      </a>
+    </div>
+
+    <nav class="nav-menu" aria-label="Navegación principal">
+      <a href="index.html" class="nav-main-link">Inicio</a>
+
+      <div class="nav-dropdown has-dropdown">
+        <a href="quienes-somos.html" class="nav-main-link">Quiénes Somos</a>
+        <div class="nav-dropdown-menu">
+          <a href="quienes-somos.html#donde">Dónde estamos</a>
+          <a href="quienes-somos.html#mision">Misión</a>
+          <a href="quienes-somos.html#vision">Visión</a>
+          <a href="quienes-somos.html#objetivos">Objetivos Estratégicos</a>
+          <a href="quienes-somos.html#valores">Valores</a>
+          <a href="quienes-somos.html#principios">Principios</a>
+        </div>
+      </div>
+
+      <div class="nav-dropdown has-dropdown">
+        <a href="publicaciones.html" class="nav-main-link active">Publicaciones</a>
+        <div class="nav-dropdown-menu">
+          <a href="publicaciones.html#sin-fronteras">Sin Fronteras</a>
+          <a href="publicaciones.html#el-canto-del-tordo">El Canto del Tordo</a>
+          <a href="publicaciones.html#notas-informativas">Notas informativas</a>
+          <a href="publicaciones.html#encuentros-jrf">Encuentros JRF</a>
+          <a href="publicaciones.html#historias-de-vida">Historias de vida</a>
+          <a href="publicaciones.html#guia">Guía</a>
+        </div>
+      </div>
+
+      <div class="nav-dropdown has-dropdown">
+        <a href="proyectos.html" class="nav-main-link">Proyectos</a>
+        <div class="nav-dropdown-menu">
+          <a href="proyectos.html#proyecto-migrantes">Proyecto Migrantes</a>
+          <a href="proyectos.html#proyecto-emprendimientos">Proyecto Emprendimientos</a>
+          <a href="proyectos.html#proyecto-jovenes">Proyecto Jóvenes e Interculturalidad</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="nav-pills">
+      <div class="pill-dropdown has-dropdown">
+        <button class="pill-btn pill-blue dropdown-toggle" type="button">
+          Orientación Migratoria <i class="fa-solid fa-caret-down"></i>
+        </button>
+        <div class="pill-dropdown-menu">
+          <a href="preguntas-frecuentes.html">Preguntas frecuentes</a>
+          <a href="guias.html">Guías</a>
+        </div>
+      </div>
+
+      <button class="menu-toggle" type="button" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MENÚ MÓVIL -->
+  <div class="mobile-menu-overlay"></div>
+
+  <aside class="mobile-menu" aria-label="Menú móvil">
+    <button class="mobile-menu-close" type="button" aria-label="Cerrar menú">&times;</button>
+
+    <nav class="mobile-nav-links">
+      <a href="index.html">Inicio</a>
+
+      <div class="mobile-nav-group">
+        <a href="quienes-somos.html">Quiénes Somos</a>
+        <div class="mobile-submenu">
+          <a href="quienes-somos.html#donde">Dónde estamos</a>
+          <a href="quienes-somos.html#mision">Misión</a>
+          <a href="quienes-somos.html#vision">Visión</a>
+          <a href="quienes-somos.html#objetivos">Objetivos Estratégicos</a>
+          <a href="quienes-somos.html#valores">Valores</a>
+          <a href="quienes-somos.html#principios">Principios</a>
+        </div>
+      </div>
+
+      <div class="mobile-nav-group">
+        <a href="publicaciones.html">Publicaciones</a>
+        <div class="mobile-submenu">
+          <a href="publicaciones.html#sin-fronteras">Sin Fronteras</a>
+          <a href="publicaciones.html#el-canto-del-tordo">El Canto del Tordo</a>
+          <a href="publicaciones.html#notas-informativas">Notas informativas</a>
+          <a href="publicaciones.html#encuentros-jrf">Encuentros JRF</a>
+          <a href="publicaciones.html#historias-de-vida">Historias de vida</a>
+          <a href="publicaciones.html#guia">Guía</a>
+        </div>
+      </div>
+
+      <div class="mobile-nav-group">
+        <a href="proyectos.html">Proyectos</a>
+        <div class="mobile-submenu">
+          <a href="proyectos.html#proyecto-migrantes">Proyecto Migrantes</a>
+          <a href="proyectos.html#proyecto-emprendimientos">Proyecto Emprendimientos</a>
+          <a href="proyectos.html#proyecto-jovenes">Proyecto Jóvenes e Interculturalidad</a>
+        </div>
+      </div>
+
+      <a href="preguntas-frecuentes.html">Preguntas frecuentes</a>
+      <a href="guias.html">Guías</a>
+    </nav>
+  </aside>
+
+  <!-- HERO -->
+  <section class="historias-hero">
+    <div class="historias-hero-content">
+      <div class="hero-line"></div>
+      <div>
+        <p class="historias-mini">Publicaciones institucionales</p>
+        <h1>Historias de Vida</h1>
+        <p class="historias-desc">
+          Relatos que visibilizan las experiencias, desafíos, aprendizajes y esperanzas
+          de personas migrantes acompañadas por el Servicio Jesuita a Migrantes.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOMOS -->
+  <main class="historias-layout">
+    <section class="historias-intro">
+      <h2>Tomos disponibles</h2>
+      <p>
+        Esta sección reúne los tomos de Historias de Vida, documentos que recogen voces,
+        trayectorias y experiencias humanas vinculadas a la movilidad, la acogida y la integración.
+      </p>
+    </section>
+
+    <section class="tomos-grid">
+
+      <article class="tomo-card">
+        <div class="tomo-img-wrap">
+          <img src="historia1.png" alt="Historias de Vida - Tomo 1">
+        </div>
+
+        <div class="tomo-body">
+          <span class="tomo-numero">Tomo 1</span>
+          <h3>Historias de Vida</h3>
+          <p>
+            Primer tomo de relatos testimoniales sobre procesos migratorios,
+            acompañamiento y reconstrucción de proyectos de vida.
+          </p>
+
+          <button class="tomo-btn" type="button" data-pdf="pdf/historias-tomo1.pdf" data-title="Historias de Vida - Tomo 1">
+            Leer tomo
+            <i class="fa-solid fa-file-pdf"></i>
+          </button>
+        </div>
+      </article>
+
+      <article class="tomo-card">
+        <div class="tomo-img-wrap">
+          <img src="historia2.png" alt="Historias de Vida - Tomo 2">
+        </div>
+
+        <div class="tomo-body">
+          <span class="tomo-numero">Tomo 2</span>
+          <h3>Historias de Vida</h3>
+          <p>
+            Segundo tomo con nuevas voces y experiencias que reflejan resiliencia,
+            hospitalidad e integración en contextos de movilidad humana.
+          </p>
+
+          <button class="tomo-btn" type="button" data-pdf="pdf/historias-tomo2.pdf" data-title="Historias de Vida - Tomo 2">
+            Leer tomo
+            <i class="fa-solid fa-file-pdf"></i>
+          </button>
+        </div>
+      </article>
+
+      <article class="tomo-card">
+        <div class="tomo-img-wrap">
+          <img src="historia3.png" alt="Historias de Vida - Tomo 3">
+        </div>
+
+        <div class="tomo-body">
+          <span class="tomo-numero">Tomo 3</span>
+          <h3>Historias de Vida</h3>
+          <p>
+            Tercer tomo de testimonios que fortalecen la memoria institucional
+            y visibilizan la dignidad de las personas migrantes.
+          </p>
+
+          <button class="tomo-btn" type="button" data-pdf="pdf/historias-tomo3.pdf" data-title="Historias de Vida - Tomo 3">
+            Leer tomo
+            <i class="fa-solid fa-file-pdf"></i>
+          </button>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer compact-footer">
+    <div class="footer-stripe">
+      <span class="stripe-blue"></span>
+      <span class="stripe-orange"></span>
+      <span class="stripe-red"></span>
+    </div>
+
+    <div class="footer-main footer-main-compact">
+      <div class="footer-brand compact-brand">
+        <div class="footer-logo-box">
+          <img src="sjm.png" alt="SJM Bolivia">
+        </div>
+        <div class="footer-brand-text">
+          <p>
+            El Servicio Jesuita a Migrantes en Bolivia acompaña, orienta y promueve
+            la dignidad de las personas migrantes mediante acciones de acogida,
+            protección e integración.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-contact compact-contact">
+        <h3>Contacto</h3>
+        <a href="mailto:lapaz@sjmbolivia.org">lapaz@sjmbolivia.org</a>
+        <a href="mailto:elalto@sjmbolivia.org">elalto@sjmbolivia.org</a>
+
+        <div class="footer-social">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom compact-bottom">
+      <p>© Servicio Jesuita a Migrantes Bolivia</p>
+      <div class="footer-bottom-links">
+        <a href="#">Política de privacidad</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- VISOR PDF -->
+  <div class="pdf-viewer-modal" id="pdfViewerModal" aria-hidden="true">
+    <div class="pdf-viewer-header">
+      <h3 id="pdfViewerTitle">Historias de Vida</h3>
+
+      <div class="pdf-viewer-actions">
+        <a id="pdfDownloadBtn" href="#" target="_blank">
+          Abrir PDF <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+
+        <button type="button" id="pdfCloseBtn" aria-label="Cerrar visor PDF">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+    </div>
+
+    <iframe id="pdfFrame" src="" title="Visor PDF"></iframe>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="historias.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SJM Bolivia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="sjm.png" alt="SJM Bolivia">
+            </a>
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-main-link">Inicio</a>
+
+            <div class="nav-dropdown has-dropdown">
+                <a href="quienes-somos.html" class="nav-main-link">Quiénes Somos</a>
+                <div class="nav-dropdown-menu">
+                    <a href="quienes-somos.html#donde">Dónde estamos</a>
+                    <a href="quienes-somos.html#mision">Misión</a>
+                    <a href="quienes-somos.html#vision">Visión</a>
+                    <a href="quienes-somos.html#objetivos">Objetivos Estratégicos</a>
+                    <a href="quienes-somos.html#valores">Valores</a>
+                    <a href="quienes-somos.html#principios">Principios</a>
+                </div>
+            </div>
+
+            <div class="nav-dropdown has-dropdown">
+                <a href="publicaciones.html" class="nav-main-link">Publicaciones</a>
+                <div class="nav-dropdown-menu">
+                    <a href="publicaciones.html#sin-fronteras">Sin Fronteras</a>
+                    <a href="publicaciones.html#el-canto-del-tordo">El Canto del Tordo</a>
+                    <a href="publicaciones.html#notas-informativas">Notas informativas</a>
+                    <a href="publicaciones.html#encuentros-jrf">Encuentros JRF</a>
+                    <a href="publicaciones.html#historias-de-vida">Historias de vida</a>
+                    <a href="publicaciones.html#guia">Guía: Construyendo espacios interculturales</a>
+                </div>
+            </div>
+
+            <div class="nav-dropdown has-dropdown">
+                <a href="proyectos.html" class="nav-main-link">Proyectos</a>
+                <div class="nav-dropdown-menu">
+                    <a href="proyectos.html#proyecto-migrantes">Proyecto Migrantes</a>
+                    <a href="proyectos.html#proyecto-emprendimientos">Proyecto Emprendimientos</a>
+                    <a href="proyectos.html#proyecto-jovenes">Proyecto Jóvenes e Interculturalidad</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="nav-pills">
+            <div class="pill-dropdown has-dropdown">
+                <button class="pill-btn pill-blue dropdown-toggle" type="button">
+                    Orientación Migratoria <i class="fa-solid fa-caret-down"></i>
+                </button>
+
+                <div class="pill-dropdown-menu">
+                    <a href="preguntas-frecuentes.html">Preguntas frecuentes</a>
+                    <a href="guias.html">Guías</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-actions">
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- MENÚ MÓVIL -->
+    <div class="mobile-menu-overlay"></div>
+
+    <aside class="mobile-menu">
+        <button class="mobile-menu-close" aria-label="Cerrar menú">&times;</button>
+
+        <nav class="mobile-nav-links">
+            <a href="index.html">Inicio</a>
+
+            <div class="mobile-nav-group">
+                <a href="quienes-somos.html">Quiénes Somos</a>
+                <div class="mobile-submenu">
+                    <a href="quienes-somos.html#donde">Dónde estamos</a>
+                    <a href="quienes-somos.html#mision">Misión</a>
+                    <a href="quienes-somos.html#vision">Visión</a>
+                    <a href="quienes-somos.html#objetivos">Objetivos Estratégicos</a>
+                    <a href="quienes-somos.html#valores">Valores</a>
+                    <a href="quienes-somos.html#principios">Principios</a>
+                </div>
+            </div>
+
+            <div class="mobile-nav-group">
+                <a href="publicaciones.html">Publicaciones</a>
+                <div class="mobile-submenu">
+                    <a href="publicaciones.html#sin-fronteras">Sin Fronteras</a>
+                    <a href="publicaciones.html#el-canto-del-tordo">El Canto del Tordo</a>
+                    <a href="publicaciones.html#notas-informativas">Notas informativas</a>
+                    <a href="publicaciones.html#encuentros-jrf">Encuentros JRF</a>
+                    <a href="publicaciones.html#historias-de-vida">Historias de vida</a>
+                    <a href="publicaciones.html#guia">Guía: Construyendo espacios interculturales</a>
+                </div>
+            </div>
+
+            <div class="mobile-nav-group">
+                <a href="proyectos.html">Proyectos</a>
+                <div class="mobile-submenu">
+                    <a href="proyectos.html#proyecto-migrantes">Proyecto Migrantes</a>
+                    <a href="proyectos.html#proyecto-emprendimientos">Proyecto Emprendimientos</a>
+                    <a href="proyectos.html#proyecto-jovenes">Proyecto Jóvenes e Interculturalidad</a>
+                </div>
+            </div>
+
+            <a href="preguntas-frecuentes.html">Preguntas frecuentes</a>
+            <a href="guias.html">Guías</a>
+            <a href="transparencia.html">Transparencia</a>
+        </nav>
+    </aside>
+
+    <!-- REDES SOCIALES -->
+    <div class="social-bar">
+        <a href="https://www.facebook.com/sjmbolivia/?locale=es_LA" class="social-btn facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="#" class="social-btn tiktok">
+            <i class="fa-brands fa-tiktok"></i>
+        </a>
+        <a href="#" class="social-btn youtube">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="https://www.instagram.com/sjm_bolivia?fbclid=IwY2xjawQbAcNleHRuA2FlbQIxMABicmlkETIzV3NBRFhaU3JRR2lTV0FEc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHknOJWhN5SjtECE_AGMZW6dhKENJQ4DsulagceEqR9VEMB4Tl49TRIYFd6pf_aem_hZ1qLGgGM3sFH1pRHCz_xg" class="social-btn instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+    </div>
+
+    <!-- CAROUSEL -->
+    <section class="carousel">
+        <button class="carousel-arrow left" aria-label="Anterior">&#10094;</button>
+        <button class="carousel-arrow right" aria-label="Siguiente">&#10095;</button>
+
+        <div class="slides">
+
+            <div class="slide active">
+                <img src="slide 1.jpeg" alt="Slide 1">
+                <div class="overlay"></div>
+
+                <div class="slide-content">
+                    <div class="title-line"></div>
+                    <div class="slide-text">
+                        <h1>Hospitalidad y Justicia</h1>
+                        <p>Acogemos con dignidad y actuamos con equidad, promoviendo el respeto de derechos y una convivencia basada en la interculturalidad.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="carrousel.jpeg" alt="Slide 2">
+                <div class="overlay"></div>
+
+                <div class="slide-content">
+                    <div class="title-line"></div>
+                    <div class="slide-text">
+                        <h1>Construyendo interculturalidad</h1>
+                        <p>Promovemos procesos de integración basados en el reconocimiento, respeto y diálogo entre culturas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="carrousel 2.jpeg" alt="Slide 3">
+                <div class="overlay"></div>
+
+                <div class="slide-content">
+                    <div class="title-line"></div>
+                    <div class="slide-text">
+                        <h1>Acompañar, proteger y servir</h1>
+                        <p>Acompañamos y protegemos a las personas migrantes mediante acciones orientadas a garantizar su dignidad.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="carousel-dots"></div>
+    </section>
+
+    <!-- SECCIÓN INFORMACIÓN -->
+    <section class="info-section">
+
+        <div class="areas-header">
+            <h2>Áreas de Trabajo</h2>
+        </div>
+
+        <div class="info-top-grid">
+
+            <a href="#" class="info-top-card area-trigger" data-area="sociopastoral">
+                <img src="sociopastoral.png" alt="Área Socio Pastoral">
+                <div class="info-top-overlay"></div>
+
+                <div class="info-top-content">
+                    <div>
+                        <h3>ÁREA SOCIO PASTORAL</h3>
+                        <p class="info-top-description">
+                        </p>
+                    </div>
+                    <span>Ver área</span>
+                </div>
+            </a>
+
+            <a href="#" class="info-top-card area-trigger" data-area="jovenes">
+                <img src="jovenes.jpeg" alt="Área Jóvenes e Interculturalidad">
+                <div class="info-top-overlay"></div>
+
+                <div class="info-top-content">
+                    <h3>ÁREA FORMACIÓN INTERCULTURAL</h3>
+                    <p class="info-top-description">
+                    </p>
+                    <span>Ver área</span>
+                </div>
+            </a>
+
+        </div>
+
+        <div class="info-grid">
+
+            <div class="info-card card-yellow video-card">
+    <div class="youtube-crop-box">
+        <iframe
+            class="youtube-crop-video"
+            src="https://www.youtube.com/embed/cxE3tPxqYaQ?autoplay=1&mute=1&playsinline=1&controls=0&rel=0&modestbranding=1&loop=1&playlist=cxE3tPxqYaQ"
+            title="Interculturalidad y migración"
+            frameborder="0"
+            allow="autoplay; encrypted-media; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+    </div>
+    <div class="video-overlay">
+
+    <h3 class="card-top-title video-title">
+    Historias de Migración
+</h3>
+
+    <a
+        href="https://youtu.be/cxE3tPxqYaQ"
+        target="_blank"
+        class="video-btn">
+
+        Ver completo
+
+    </a>
+
+</div>
+</div>
+
+            <a href="#" class="info-card card-blue stats-trigger" data-stats="cifras">
+<h3 class="card-top-title">Cifras de Atención</h3>
+                <div class="stats-cover">
+                    <span class="stats-number">9.545</span>
+                    <p>Personas acompañadas entre 2019 y 2026</p>
+
+                    <div class="stats-mini-grid">
+                        <div>
+                            <strong>68%</strong>
+                            <span>Adultos</span>
+                        </div>
+
+                        <div>
+                            <strong>32%</strong>
+                            <span>Menores</span>
+                        </div>
+                    </div>
+
+                    <span class="stats-cover-btn">Ver cifras</span>
+                </div>
+            </a>
+
+            <div class="info-card card-red">
+<h3 class="card-top-title">Perfil Migratorio</h3>
+                <h2>1.412.264.226</h2>
+                <p>Recaudados en 2024</p>
+
+                <div class="barra">
+                    <div class="barra-top">
+                        <span>Alianzas empresas o instituciones privadas</span>
+                        <strong>73%</strong>
+                    </div>
+                    <div class="progress"><div style="width:73%"></div></div>
+                </div>
+
+                <div class="barra">
+                    <div class="barra-top">
+                        <span>Fondos concursables y proyectos</span>
+                        <strong>9%</strong>
+                    </div>
+                    <div class="progress"><div style="width:9%"></div></div>
+                </div>
+
+                <div class="barra">
+                    <div class="barra-top">
+                        <span>Donaciones Socios</span>
+                        <strong>9%</strong>
+                    </div>
+                    <div class="progress"><div style="width:9%"></div></div>
+                </div>
+
+                <div class="barra">
+                    <div class="barra-top">
+                        <span>Compañía de Jesús</span>
+                        <strong>6%</strong>
+                    </div>
+                    <div class="progress"><div style="width:6%"></div></div>
+                </div>
+
+                <div class="barra">
+                    <div class="barra-top">
+                        <span>Donaciones individuales</span>
+                        <strong>3%</strong>
+                    </div>
+                    <div class="progress"><div style="width:3%"></div></div>
+                </div>
+
+                <div class="barra">
+                    <div class="barra-top">
+                        <span>Ingresos no operacionales</span>
+                        <strong>0%</strong>
+                    </div>
+                    <div class="progress"><div style="width:0%"></div></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+<!-- NUESTRAS ALIANZAS -->
+<section class="alliances-section">
+
+    <h2 id="alliancesTitle">Aliados Estratégicos</h2>
+
+    <div class="alliances-carousel">
+        <div class="alliances-track">
+
+            <!-- ALIADOS ESTRATÉGICOS -->
+            <div class="alliances-slide active" data-title="Aliados Estratégicos">
+
+                <a href="https://jesuitenweltweit.de/" target="_blank">
+                    <img src="alianza1.png" alt="Aliado Estratégico 1">
+                </a>
+
+                <a href="https://www.kindermissionswerk.org/es/" target="_blank">
+                    <img src="alianza2.png" alt="Aliado Estratégico 2">
+                </a>
+
+                <a href="https://devp.org/fr/" target="_blank">
+                    <img src="alianza3.png" alt="Aliado Estratégico 3">
+                </a>
+
+            </div>
+
+            <!-- TRABAJO EN RED -->
+            <div class="alliances-slide" data-title="Trabajo en Red">
+
+                <a href="https://www.redjesuitaconmigranteslac.org/" target="_blank">
+                    <img src="alianza4.png" alt="Trabajo en Red 1">
+                </a>
+
+                <a href="https://jrs.net/es/home/" target="_blank">
+                    <img src="alianza5.png" alt="Trabajo en Red 2">
+                </a>
+
+            </div>
+
+            <!-- SOMOS PARTE DE -->
+            <div class="alliances-slide" data-title="Somos parte de">
+
+                <a href="https://www.jesuitas.org.bo/" target="_blank">
+                    <img src="alianza6.png" alt="Somos parte de">
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="alliances-dots">
+            <button class="alliance-dot active"
+                    type="button"
+                    aria-label="Aliados Estratégicos">
+            </button>
+
+            <button class="alliance-dot"
+                    type="button"
+                    aria-label="Trabajo en Red">
+            </button>
+
+            <button class="alliance-dot"
+                    type="button"
+                    aria-label="Somos parte de">
+            </button>
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- UBICACIÓN / CONTACTO -->
+    <section class="contact-showcase" id="donaciones">
+
+        <div class="contact-top">
+
+            <div class="contact-map">
+                <iframe
+                    src="https://maps.google.com/maps?q=SJM%20Servicio%20Jesuita%20a%20Migrantes%20Bolivia&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="contact-card contact-orange">
+                <div class="contact-icon">
+                    <i class="fa-regular fa-address-book"></i>
+                </div>
+                <h3>Información de contacto:</h3>
+                <p>
+                    Av. De los Héroes N°140 casi esq. 11 de Junio, Zona Ferropetrol<br>
+                    El Alto - Bolivia
+                </p>
+            </div>
+
+            <div class="contact-card contact-green">
+                <div class="contact-icon">
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
+                <h3>Correo electrónico:</h3>
+                <p>comunicacion.sjmbolivia@gmail.com</p>
+            </div>
+
+        </div>
+
+        <div class="contact-bottom">
+            <div class="contact-bottom-overlay"></div>
+
+            <div class="contact-bottom-content">
+
+                <div class="contact-info-text">
+                    <h2>DONACIONES</h2>
+                    <h3>Tu solidaridad no conoce fronteras</h3>
+
+                    <p>
+                        Hoy, muchas familias migrantes se encuentran en una situación de extrema
+                        vulnerabilidad, lejos de su hogar y con lo mínimo para subsistir.
+                        Un pequeño gesto de tu parte puede ser el nuevo comienzo que ellos necesitan.
+                    </p>
+
+                    <p>
+                        Te invitamos a sumarte a nuestra colecta de <strong>alimentos secos, ropa,
+                        materiales escolares, juguetes y fondos.</strong> Cada donación, por pequeña
+                        que parezca, abriga, alimenta y devuelve la esperanza a quienes han tenido
+                        que dejarlo todo atrás.
+                    </p>
+                </div>
+
+                <form class="contact-form" action="https://formspree.io/f/xlgkyvvb" method="POST">
+
+    <input type="text" name="nombre" placeholder="Escriba su nombre y apellidos" required>
+
+    <input type="email" name="correo" placeholder="Escriba su correo electrónico" required>
+
+    <input type="text" name="ciudad" placeholder="Escriba el nombre de su ciudad" required>
+
+    <label class="contact-check">
+        <input type="checkbox" name="acepta_politica" required>
+        <span>
+            Declaro que he leído la Política de Privacidad y doy mi consentimiento
+            para el uso de los datos que proporciono.
+        </span>
+    </label>
+
+    <input type="hidden" name="_subject" value="Nueva persona interesada en realizar una donación - SJM Bolivia">
+
+    <button type="submit">ENVIAR</button>
+
+</form>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer compact-footer">
+        <div class="footer-stripe">
+            <span class="stripe-blue"></span>
+            <span class="stripe-orange"></span>
+            <span class="stripe-red"></span>
+        </div>
+
+        <div class="footer-main footer-main-compact">
+            <div class="footer-brand compact-brand">
+                <div class="footer-logo-box">
+                    <img src="sjm.png" alt="SJM Bolivia">
+                </div>
+                <div class="footer-brand-text">
+                    <p>
+                        El Servicio Jesuita a Migrantes en Bolivia acompaña, orienta y promueve
+                        la dignidad de las personas migrantes mediante acciones de acogida,
+                        protección e integración.
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-contact compact-contact">
+                <h3>Contacto</h3>
+                <a href="mailto:comunicacion.sjmbolivia@gmail.com">comunicacion.sjmbolivia@gmail.com</a>
+
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/sjmbolivia/?locale=es_LA" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/sjm_bolivia?fbclid=IwY2xjawQbAcNleHRuA2FlbQIxMABicmlkETIzV3NBRFhaU3JRR2lTV0FEc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHknOJWhN5SjtECE_AGMZW6dhKENJQ4DsulagceEqR9VEMB4Tl49TRIYFd6pf_aem_hZ1qLGgGM3sFH1pRHCz_xg" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom compact-bottom">
+            <p>© Servicio Jesuita a Migrantes Bolivia</p>
+            <div class="footer-bottom-links">
+                <a href="#">Política de privacidad</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL AREAS -->
+    <div class="project-modal" id="areaModal" aria-hidden="true">
+        <div class="project-modal-backdrop"></div>
+
+        <div class="project-modal-box">
+            <button class="project-modal-close" id="areaModalClose" type="button">
+                &times;
+            </button>
+
+            <p class="project-modal-support" id="areaModalSupport"></p>
+            <h2 id="areaModalTitle"></h2>
+            <div class="project-modal-body" id="areaModalBody"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

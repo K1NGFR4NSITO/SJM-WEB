@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparencia - SJM Bolivia</title>
+    <link rel="stylesheet" href="transparencia.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html" aria-label="Ir al inicio">
+                <img src="sjm.png" alt="SJM Bolivia">
+            </a>
+        </div>
+
+        <nav class="nav-menu" aria-label="Navegación principal">
+            <a href="index.html" class="nav-main-link">Inicio</a>
+
+            <div class="nav-dropdown has-dropdown">
+                <a href="quienes-somos.html" class="nav-main-link">Quiénes Somos</a>
+                <div class="nav-dropdown-menu">
+                    <a href="quienes-somos.html#donde">Dónde estamos</a>
+                    <a href="quienes-somos.html#mision">Misión</a>
+                    <a href="quienes-somos.html#vision">Visión</a>
+                    <a href="quienes-somos.html#objetivos">Objetivos Estratégicos</a>
+                    <a href="quienes-somos.html#valores">Valores</a>
+                    <a href="quienes-somos.html#principios">Principios</a>
+                </div>
+            </div>
+
+            <div class="nav-dropdown has-dropdown">
+                <a href="publicaciones.html" class="nav-main-link">Publicaciones</a>
+                <div class="nav-dropdown-menu">
+                    <a href="publicaciones.html#sin-fronteras">Sin Fronteras</a>
+                    <a href="publicaciones.html#el-canto-del-tordo">El Canto del Tordo</a>
+                    <a href="publicaciones.html#notas-informativas">Notas informativas</a>
+                    <a href="publicaciones.html#encuentros-jrf">Encuentros JRF</a>
+                    <a href="publicaciones.html#historias-de-vida">Historias de vida</a>
+                    <a href="publicaciones.html#guia">Guía: Construyendo espacios interculturales</a>
+                </div>
+            </div>
+
+            <div class="nav-dropdown has-dropdown">
+                <a href="proyectos.html" class="nav-main-link">Proyectos</a>
+                <div class="nav-dropdown-menu">
+                    <a href="proyectos.html#proyecto-migrantes">Proyecto Migrantes</a>
+                    <a href="proyectos.html#proyecto-emprendimientos">Proyecto Emprendimientos</a>
+                    <a href="proyectos.html#proyecto-jovenes">Proyecto Jóvenes e Interculturalidad</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="nav-pills">
+            <div class="pill-dropdown has-dropdown">
+                <button class="pill-btn pill-blue dropdown-toggle" type="button" aria-label="Abrir menú de orientación migratoria">
+                    Orientación Migratoria <i class="fa-solid fa-caret-down"></i>
+                </button>
+
+                <div class="pill-dropdown-menu">
+                    <a href="preguntas-frecuentes.html">Preguntas frecuentes</a>
+                    <a href="guias.html">Guías</a>
+                </div>
+            </div>
+
+            <a href="transparencia.html" class="pill-btn pill-orange">Transparencia</a>
+            <button class="login-btn" type="button">Login</button>
+
+            <button class="menu-toggle" type="button" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- MENU MOVIL -->
+    <div class="mobile-menu-overlay"></div>
+
+    <aside class="mobile-menu" aria-label="Menú móvil">
+        <button class="mobile-menu-close" type="button" aria-label="Cerrar menú">&times;</button>
+
+        <nav class="mobile-nav-links">
+            <a href="index.html">Inicio</a>
+
+            <div class="mobile-nav-group">
+                <a href="quienes-somos.html">Quiénes Somos</a>
+                <div class="mobile-submenu">
+                    <a href="quienes-somos.html#donde">Dónde estamos</a>
+                    <a href="quienes-somos.html#mision">Misión</a>
+                    <a href="quienes-somos.html#vision">Visión</a>
+                    <a href="quienes-somos.html#objetivos">Objetivos Estratégicos</a>
+                    <a href="quienes-somos.html#valores">Valores</a>
+                    <a href="quienes-somos.html#principios">Principios</a>
+                </div>
+            </div>
+
+            <div class="mobile-nav-group">
+                <a href="publicaciones.html">Publicaciones</a>
+                <div class="mobile-submenu">
+                    <a href="publicaciones.html#sin-fronteras">Sin Fronteras</a>
+                    <a href="publicaciones.html#el-canto-del-tordo">El Canto del Tordo</a>
+                    <a href="publicaciones.html#notas-informativas">Notas informativas</a>
+                    <a href="publicaciones.html#encuentros-jrf">Encuentros JRF</a>
+                    <a href="publicaciones.html#historias-de-vida">Historias de vida</a>
+                    <a href="publicaciones.html#guia">Guía: Construyendo espacios interculturales</a>
+                </div>
+            </div>
+
+            <div class="mobile-nav-group">
+                <a href="proyectos.html">Proyectos</a>
+                <div class="mobile-submenu">
+                    <a href="proyectos.html#proyecto-migrantes">Proyecto Migrantes</a>
+                    <a href="proyectos.html#proyecto-emprendimientos">Proyecto Emprendimientos</a>
+                    <a href="proyectos.html#proyecto-jovenes">Proyecto Jóvenes e Interculturalidad</a>
+                </div>
+            </div>
+
+            <a href="preguntas-frecuentes.html">Preguntas frecuentes</a>
+            <a href="guias.html">Guías</a>
+            <a href="transparencia.html">Transparencia</a>
+        </nav>
+    </aside>
+
+    <!-- REDES -->
+    <div class="social-bar">
+        <a href="#" class="social-btn facebook" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="social-btn tiktok" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" class="social-btn youtube" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" class="social-btn instagram" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+
+    <!-- HERO TRANSPARENCIA -->
+    <section class="transparency-hero">
+        <img src="b.jpg" alt="Transparencia SJM Bolivia">
+        <div class="overlay"></div>
+
+        <div class="transparency-content">
+            <div class="accent-line"></div>
+            <div class="transparency-text">
+                <h1>CONOCE NUESTRO BALANCE 2026</h1>
+                <p>
+                    En esta sección compartimos de manera abierta la información institucional,
+                    financiera y social del SJM Bolivia. Aquí podrás revisar documentos clave
+                    sobre nuestra gestión, fuentes de financiamiento y balances anuales.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINANCIAMIENTO -->
+    <section class="transparencia">
+        <h2 class="titulo-transparencia">ESTRUCTURA DE FINANCIAMIENTO 2024</h2>
+
+        <div class="financiamiento">
+
+            <div class="fila">
+                <span>Alianzas empresas o instituciones privadas</span>
+                <div class="barra">
+                    <div class="progreso azul" style="width:73%"></div>
+                </div>
+                <strong>73%</strong>
+            </div>
+
+            <div class="fila">
+                <span>Fondos concursables y proyectos</span>
+                <div class="barra">
+                    <div class="progreso amarillo" style="width:9%"></div>
+                </div>
+                <strong>9%</strong>
+            </div>
+
+            <div class="fila">
+                <span>Donaciones Socios</span>
+                <div class="barra">
+                    <div class="progreso rojo" style="width:9%"></div>
+                </div>
+                <strong>9%</strong>
+            </div>
+
+            <div class="fila">
+                <span>Compañía de Jesús</span>
+                <div class="barra">
+                    <div class="progreso azul-oscuro" style="width:6%"></div>
+                </div>
+                <strong>6%</strong>
+            </div>
+
+            <div class="fila">
+                <span>Donaciones individuales</span>
+                <div class="barra">
+                    <div class="progreso morado" style="width:3%"></div>
+                </div>
+                <strong>3%</strong>
+            </div>
+
+            <div class="fila">
+                <span>Ingresos no operacionales</span>
+                <div class="barra">
+                    <div class="progreso gris" style="width:0%"></div>
+                </div>
+                <strong>0%</strong>
+            </div>
+
+        </div>
+
+        <div class="total">
+            <h1>1.412.264.226</h1>
+            <p>recaudados en 2024</p>
+        </div>
+
+        <!-- BOTONES VER MÁS -->
+        <section class="transparency-blocks">
+
+            <div class="doc-block">
+                <h2 class="doc-title orange-title">BALANCE SOCIAL</h2>
+                <div class="doc-line">
+                    <span class="doc-name orange-text">Balance Social 2024</span>
+                    <div class="doc-icon"><i class="fa-solid fa-file-lines"></i></div>
+                    <span class="doc-year">2024</span>
+                </div>
+                <button class="doc-button toggle-btn" data-target="balance-social-content">Ver más</button>
+
+                <div id="balance-social-content" class="expand-content">
+                    <div class="timeline">
+                        <div class="item left">
+                            <a href="#">Balance Social 2024</a>
+                            <span class="year">2024</span>
+                        </div>
+                        <div class="item right">
+                            <a href="#">Balance Social 2023</a>
+                            <span class="year">2023</span>
+                        </div>
+                        <div class="item left">
+                            <a href="#">Balance Social 2022</a>
+                            <span class="year">2022</span>
+                        </div>
+                        <div class="item right">
+                            <a href="#">Balance Social 2021</a>
+                            <span class="year">2021</span>
+                        </div>
+                        <div class="item left">
+                            <a href="#">Balance Social 2020</a>
+                            <span class="year">2020</span>
+                        </div>
+                        <div class="item right">
+                            <a href="#">Balance Social 2019</a>
+                            <span class="year">2019</span>
+                        </div>
+                        <div class="item left">
+                            <a href="#">Balance Social 2018</a>
+                            <span class="year">2018</span>
+                        </div>
+                        <div class="item right">
+                            <a href="#">Balance Social 2017</a>
+                            <span class="year">2017</span>
+                        </div>
+                        <div class="item left">
+                            <a href="#">Balance Social 2016</a>
+                            <span class="year">2016</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="doc-block">
+                <h2 class="doc-title blue-title">ESTADO FINANCIERO</h2>
+                <div class="doc-line">
+                    <span class="doc-name yellow-text">Estados Financieros 2024</span>
+                    <div class="doc-icon"><i class="fa-solid fa-file-lines"></i></div>
+                    <span class="doc-year">2024</span>
+                </div>
+                <button class="doc-button toggle-btn" data-target="estado-financiero-content">Ver más</button>
+
+                <div id="estado-financiero-content" class="expand-content">
+                    <div class="timeline">
+                        <div class="item left">
+                            <a href="#">Estados Financieros 2024</a>
+                            <span class="year">2024</span>
+                        </div>
+                        <div class="item right">
+                            <a href="#">Estados Financieros 2023</a>
+                            <span class="year">2023</span>
+                        </div>
+                        <div class="item left">
+                            <a href="#">Estados Financieros 2022</a>
+                            <span class="year">2022</span>
+                        </div>
+                        <div class="item right">
+                            <a href="#">Estados Financieros 2021</a>
+                            <span class="year">2021</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="doc-block">
+                <h2 class="doc-title cyan-title">BALANCE FINANCIERO</h2>
+                <div class="doc-line">
+                    <span class="doc-name cyan-text">Balance Financiero 2024</span>
+                    <div class="doc-icon"><i class="fa-solid fa-file-lines"></i></div>
+                    <span class="doc-year">2024</span>
+                </div>
+                <button class="doc-button toggle-btn" data-target="balance-financiero-content">Ver más</button>
+
+                <div id="balance-financiero-content" class="expand-content">
+                    <div class="timeline">
+                        <div class="item left">
+                            <a href="#">Balance Financiero 2024</a>
+                            <span class="year">2024</span>
+                        </div>
+                        <div class="item right">
+                            <a href="#">Balance Financiero 2023</a>
+                            <span class="year">2023</span>
+                        </div>
+                        <div class="item left">
+                            <a href="#">Balance Financiero 2022</a>
+                            <span class="year">2022</span>
+                        </div>
+                        <div class="item right">
+                            <a href="#">Balance Financiero 2021</a>
+                            <span class="year">2021</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </section>
+
+    <!-- FOOTER COMPACTO BLANCO -->
+    <footer class="site-footer compact-footer">
+        <div class="footer-stripe">
+            <span class="stripe-blue"></span>
+            <span class="stripe-orange"></span>
+            <span class="stripe-red"></span>
+        </div>
+
+        <div class="footer-main footer-main-compact">
+            <div class="footer-brand compact-brand">
+                <div class="footer-logo-box">
+                    <img src="sjm.png" alt="SJM Bolivia">
+                </div>
+                <div class="footer-brand-text">
+                    <p>
+                        El Servicio Jesuita a Migrantes en Bolivia acompaña, orienta y promueve
+                        la dignidad de las personas migrantes mediante acciones de acogida,
+                        protección e integración.
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-contact compact-contact">
+                <h3>Contacto</h3>
+                <a href="mailto:lapaz@sjmbolivia.org">lapaz@sjmbolivia.org</a>
+                <a href="mailto:elalto@sjmbolivia.org">elalto@sjmbolivia.org</a>
+                <a href="transparencia.html">Transparencia</a>
+
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom compact-bottom">
+            <p>© Servicio Jesuita a Migrantes Bolivia</p>
+            <div class="footer-bottom-links">
+                <a href="#">Política de privacidad</a>
+                <a href="transparencia.html">Transparencia</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const toggleButtons = document.querySelectorAll(".toggle-btn");
+
+            toggleButtons.forEach(button => {
+                button.addEventListener("click", () => {
+                    const targetId = button.getAttribute("data-target");
+                    const content = document.getElementById(targetId);
+
+                    if (!content) return;
+
+                    const isActive = content.classList.contains("active");
+
+                    document.querySelectorAll(".expand-content").forEach(section => {
+                        section.classList.remove("active");
+                    });
+
+                    document.querySelectorAll(".toggle-btn").forEach(btn => {
+                        btn.textContent = "Ver más";
+                        btn.classList.remove("active-btn");
+                    });
+
+                    if (!isActive) {
+                        content.classList.add("active");
+                        button.textContent = "Ver menos";
+                        button.classList.add("active-btn");
+
+                        setTimeout(() => {
+                            content.scrollIntoView({
+                                behavior: "smooth",
+                                block: "start"
+                            });
+                        }, 150);
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

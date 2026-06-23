@@ -1617,9 +1617,11 @@ section{
     }
 
     .navbar{
-        padding:0 14px;
-        gap:10px;
-        box-shadow:none;
+                display:flex !important;
+        justify-content:space-between !important;
+        align-items:center !important;
+        padding:0 16px !important;
+        gap:12px !important;
     }
 
     .logo img{

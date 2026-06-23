@@ -852,3 +852,29 @@ document.addEventListener("DOMContentLoaded", () => {
     showAllianceSlide(0);
     restartAllianceAutoplay();
 });
+
+/* OCULTAR / MOSTRAR REDES SOCIALES POR ACTIVIDAD */
+
+const socialBar = document.querySelector(".social-bar");
+
+let socialTimeout;
+
+function mostrarRedes() {
+    if (!socialBar) return;
+
+    socialBar.classList.remove("hidden");
+
+    clearTimeout(socialTimeout);
+
+    socialTimeout = setTimeout(() => {
+        socialBar.classList.add("hidden");
+    }, 3000);
+}
+
+window.addEventListener("mousemove", mostrarRedes);
+window.addEventListener("scroll", mostrarRedes);
+window.addEventListener("touchstart", mostrarRedes);
+window.addEventListener("click", mostrarRedes);
+window.addEventListener("keydown", mostrarRedes);
+
+mostrarRedes();

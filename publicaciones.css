@@ -1246,3 +1246,93 @@ body{
         padding:10px 16px 14px;
     }
 }
+
+/* REDES SOCIALES */
+
+.social-bar{
+    position:fixed;
+    top:154px;
+    left:0;
+    display:flex;
+    flex-direction:column;
+    z-index:999;
+
+    opacity:1;
+    visibility:visible;
+    transform:translateX(0);
+
+    transition:
+        opacity 0.8s ease,
+        visibility 0.8s ease,
+        transform 0.8s ease;
+}
+
+.social-bar.hidden{
+    opacity:0;
+    visibility:hidden;
+    transform:translateX(-30px) scale(0.95);
+    pointer-events:none;
+}
+
+.social-btn{
+    width:50px;
+    height:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    transition:all 0.3s ease;
+}
+
+.social-btn i{
+    color:#ffffff;
+    font-size:26px;
+}
+
+.social-btn.facebook{ background:#8da6c2; }
+.social-btn.tiktok{ background:#3a3a3a; }
+.social-btn.youtube{ background:#e7b1b1; }
+.social-btn.instagram{ background:#c9a7c7; }
+
+.social-btn.facebook:hover{ background:#1877f2; }
+.social-btn.tiktok:hover{ background:#000000; }
+.social-btn.youtube:hover{ background:#ff0000; }
+.social-btn.instagram:hover{ background:linear-gradient(45deg,#f9ce34,#ee2a7b,#6228d7); }
+
+.social-btn:hover{
+    transform:translateX(3px);
+}
+
+/* REDES SOCIALES RESPONSIVE */
+
+@media (max-width: 768px){
+
+    .social-bar{
+        top:92px;
+    }
+
+    .social-btn{
+        width:38px;
+        height:38px;
+    }
+
+    .social-btn i{
+        font-size:20px;
+    }
+}
+
+@media (max-width: 480px){
+
+    .social-bar{
+        top:86px;
+    }
+
+    .social-btn{
+        width:34px;
+        height:34px;
+    }
+
+    .social-btn i{
+        font-size:18px;
+    }
+}

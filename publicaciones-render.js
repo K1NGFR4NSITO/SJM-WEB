@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const resetFilters = document.getElementById("resetFilters");
 
   const modal = document.getElementById("pdfViewerModal");
-  const frame = document.getElementById("pdfFrame");
+  let frame = document.getElementById("pdfFrame");
   const title = document.getElementById("pdfViewerTitle");
   const downloadBtn = document.getElementById("pdfDownloadBtn");
   const closeBtn = document.getElementById("pdfCloseBtn");
@@ -216,33 +216,38 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  function abrirPDF(url, tituloPDF) {
+function abrirPDF(url, tituloPDF) {
+
+  if (!modal || !frame || !title || !downloadBtn) return;
 
   const pdfAjustado = `${url}#zoom=page-fit&view=Fit`;
 
   frame.src = pdfAjustado;
-  title.textContent = tituloPDF;
+  title.textContent = tituloPDF || "Publicación";
   downloadBtn.href = url;
 
   modal.classList.add("active");
-
   document.body.classList.add("pdf-open");
 
   pdfAbierto = true;
 }
 
-  function cerrarPDF() {
+function cerrarPDF() {
 
-    modal.classList.remove("active");
+  if (!modal || !frame) return;
 
-    document.body.classList.remove("pdf-open");
+  modal.classList.remove("active");
+  document.body.classList.remove("pdf-open");
 
-    setTimeout(() => {
-      frame.src = "";
-    }, 150);
+  setTimeout(() => {
+    const nuevoFrame = frame.cloneNode(false);
+    nuevoFrame.src = "";
+    frame.parentNode.replaceChild(nuevoFrame, frame);
+    frame = nuevoFrame;
+  }, 150);
 
-    pdfAbierto = false;
-  }
+  pdfAbierto = false;
+}
 
   document.addEventListener("click", (e) => {
 

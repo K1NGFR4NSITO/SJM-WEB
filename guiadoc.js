@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const abrirBtn = document.getElementById("abrirGuia");
   const modal = document.getElementById("pdfViewerModal");
-  const frame = document.getElementById("pdfFrame");
+  let frame = document.getElementById("pdfFrame");
   const title = document.getElementById("pdfViewerTitle");
   const downloadBtn = document.getElementById("pdfDownloadBtn");
   const closeBtn = document.getElementById("pdfCloseBtn");
@@ -12,30 +12,22 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   let pdfAbierto = false;
-  let bloqueoHistorial = false;
 
   function abrirPDF() {
     if (!modal || !frame || !title || !downloadBtn) return;
 
     title.textContent = documento.titulo;
-frame.src = `${documento.pdf}#toolbar=0&navpanes=0&scrollbar=1&view=Fit`;    
-downloadBtn.href = documento.pdf;
+    frame.src = `${documento.pdf}#toolbar=0&navpanes=0&scrollbar=1&zoom=page-fit&view=Fit`;
+    downloadBtn.href = documento.pdf;
 
     modal.classList.add("active");
     modal.setAttribute("aria-hidden", "false");
     document.body.classList.add("pdf-open");
 
     pdfAbierto = true;
-    bloqueoHistorial = true;
-
-    history.pushState({ visorPDF: true }, "", window.location.href);
-
-    setTimeout(() => {
-      bloqueoHistorial = false;
-    }, 150);
   }
 
-  function cerrarPDF(desdeHistorial = false) {
+  function cerrarPDF() {
     if (!modal || !frame || !pdfAbierto) return;
 
     modal.classList.remove("active");
@@ -43,33 +35,22 @@ downloadBtn.href = documento.pdf;
     document.body.classList.remove("pdf-open");
 
     setTimeout(() => {
-      frame.src = "";
+      const nuevoFrame = frame.cloneNode(false);
+      nuevoFrame.src = "";
+      frame.parentNode.replaceChild(nuevoFrame, frame);
+      frame = nuevoFrame;
     }, 200);
 
     pdfAbierto = false;
-
-    if (!desdeHistorial && history.state?.visorPDF) {
-      history.back();
-    }
   }
 
   abrirBtn?.addEventListener("click", abrirPDF);
 
-  closeBtn?.addEventListener("click", () => {
-    cerrarPDF(false);
-  });
+  closeBtn?.addEventListener("click", cerrarPDF);
 
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && pdfAbierto) {
-      cerrarPDF(false);
-    }
-  });
-
-  window.addEventListener("popstate", () => {
-    if (bloqueoHistorial) return;
-
-    if (pdfAbierto) {
-      cerrarPDF(true);
+      cerrarPDF();
     }
   });
 

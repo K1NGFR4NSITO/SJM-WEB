@@ -4008,3 +4008,86 @@ body.modal-open{
     }
 }
 
+/* PERFIL MIGRATORIO - TORTAS RESPONSIVE */
+
+@media (max-width: 768px){
+
+    .profile-data-grid,
+    .profile-data-card{
+        display:none !important;
+    }
+
+    .pie-chart-block{
+        display:flex !important;
+        flex-direction:column !important;
+        align-items:center !important;
+        justify-content:center !important;
+        gap:18px !important;
+        padding:18px 14px !important;
+        margin:18px 0 24px !important;
+        border-radius:18px !important;
+        background:#f6f8fb !important;
+    }
+
+    .pie-chart{
+        width:170px !important;
+        height:170px !important;
+        min-width:170px !important;
+        min-height:170px !important;
+        display:block !important;
+        border-radius:50% !important;
+    }
+
+    .pie-chart::after{
+        width:74px !important;
+        height:74px !important;
+    }
+
+    .pie-legend{
+        width:100% !important;
+        display:grid !important;
+        grid-template-columns:1fr !important;
+        gap:8px !important;
+        font-size:13px !important;
+    }
+
+    .pie-legend div{
+        display:flex !important;
+        align-items:center !important;
+        gap:8px !important;
+        line-height:1.25 !important;
+        color:#14364a !important;
+        font-weight:700 !important;
+    }
+
+    .pie-color{
+        width:11px !important;
+        height:11px !important;
+        min-width:11px !important;
+        border-radius:50% !important;
+    }
+}
+
+@media (max-width: 480px){
+
+    .pie-chart-block{
+        padding:16px 12px !important;
+        gap:14px !important;
+    }
+
+    .pie-chart{
+        width:145px !important;
+        height:145px !important;
+        min-width:145px !important;
+        min-height:145px !important;
+    }
+
+    .pie-chart::after{
+        width:64px !important;
+        height:64px !important;
+    }
+
+    .pie-legend{
+        font-size:12px !important;
+    }
+}

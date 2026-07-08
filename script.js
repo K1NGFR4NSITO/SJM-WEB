@@ -745,10 +745,11 @@ document.addEventListener("DOMContentLoaded", () => {
             `
             
         },
-        perfil: {
+                perfil: {
   support: "Perfil Migratorio 2024 - 2025",
   title: "Perfil Migratorio",
   body: `
+    <div class="stats-popup-hero profile-popup-hero">
       <div>
         <span>2024 - 2025</span>
         <h3>1.364 personas migrantes caracterizadas</h3>
@@ -777,53 +778,58 @@ document.addEventListener("DOMContentLoaded", () => {
       <h3>Caracterización sociodemográfica</h3>
 
       <h4>Género</h4>
-      <div class="profile-data-grid">
-        <div class="profile-data-card"><h4>Masculino</h4><strong>870</strong><span>63,8%</span></div>
-        <div class="profile-data-card"><h4>Femenino</h4><strong>460</strong><span>33,7%</span></div>
-        <div class="profile-data-card"><h4>LGBT</h4><strong>34</strong><span>2,5%</span></div>
+      <div class="pie-chart-block" aria-label="Gráfico circular de Género">
+        <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 63.8%, #f6a300 63.8% 97.5%, #ff3d12 97.5% 100.0%);"></div>
+        <div class="pie-legend">
+          <div><span class="pie-color" style="background:#0b6b9a;"></span>Masculino: 63,8%</div><div><span class="pie-color" style="background:#f6a300;"></span>Femenino: 33,7%</div><div><span class="pie-color" style="background:#ff3d12;"></span>LGBT: 2,5%</div>
+        </div>
       </div>
+
+      
       <p>La composición evidencia una marcada mayoría masculina. La presencia de mujeres y población LGBT exige respuestas diferenciadas de protección frente a violencia, discriminación y acceso desigual a derechos.</p>
 
       <h4>Estructura por edad</h4>
-      <div class="profile-data-grid">
-        <div class="profile-data-card"><h4>17–19 años</h4><strong>105</strong><span>7,7%</span></div>
-        <div class="profile-data-card"><h4>20–25 años</h4><strong>346</strong><span>25,5%</span></div>
-        <div class="profile-data-card"><h4>26–30 años</h4><strong>318</strong><span>23,4%</span></div>
-        <div class="profile-data-card"><h4>31–35 años</h4><strong>227</strong><span>16,7%</span></div>
-        <div class="profile-data-card"><h4>36–40 años</h4><strong>154</strong><span>11,3%</span></div>
-        <div class="profile-data-card"><h4>41–50 años</h4><strong>154</strong><span>11,3%</span></div>
-        <div class="profile-data-card"><h4>51–60 años</h4><strong>43</strong><span>3,2%</span></div>
-        <div class="profile-data-card"><h4>60 años o más</h4><strong>10</strong><span>0,7%</span></div>
+      <div class="pie-chart-block" aria-label="Gráfico circular de Estructura por edad">
+        <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 7.7%, #f6a300 7.7% 33.2%, #ff3d12 33.2% 56.6%, #7a8791 56.6% 73.3%, #1097ad 73.3% 84.6%, #8b5cf6 84.6% 95.9%, #13a35b 95.9% 99.1%, #d946ef 99.1% 99.8%);"></div>
+        <div class="pie-legend">
+          <div><span class="pie-color" style="background:#0b6b9a;"></span>17–19 años: 7,7%</div><div><span class="pie-color" style="background:#f6a300;"></span>20–25: 25,5%</div><div><span class="pie-color" style="background:#ff3d12;"></span>26–30: 23,4%</div><div><span class="pie-color" style="background:#7a8791;"></span>31–35: 16,7%</div><div><span class="pie-color" style="background:#1097ad;"></span>36–40: 11,3%</div><div><span class="pie-color" style="background:#8b5cf6;"></span>41–50: 11,3%</div><div><span class="pie-color" style="background:#13a35b;"></span>51–60: 3,2%</div><div><span class="pie-color" style="background:#d946ef;"></span>60+: 0,7%</div>
+        </div>
       </div>
+
+      
       <p>Total con edad registrada: 1.357. Los grupos de 20 a 35 años reúnen el 65,6%, mostrando una migración esencialmente joven y económicamente activa, con presión sobre empleo, ingresos, vivienda y regularización documental.</p>
 
       <h4>País de procedencia</h4>
-      <div class="profile-data-grid">
-        <div class="profile-data-card"><h4>Venezuela</h4><strong>965</strong><span>70,7%</span></div>
-        <div class="profile-data-card"><h4>Colombia</h4><strong>299</strong><span>21,9%</span></div>
-        <div class="profile-data-card"><h4>Ecuador</h4><strong>40</strong><span>2,9%</span></div>
-        <div class="profile-data-card"><h4>Argentina</h4><strong>24</strong><span>1,8%</span></div>
-        <div class="profile-data-card"><h4>Perú</h4><strong>17</strong><span>1,2%</span></div>
-        <div class="profile-data-card"><h4>Otros</h4><strong>19</strong><span>1,4%</span></div>
+      <div class="pie-chart-block" aria-label="Gráfico circular de País de procedencia">
+        <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 70.7%, #f6a300 70.7% 92.6%, #ff3d12 92.6% 95.5%, #7a8791 95.5% 97.3%, #1097ad 97.3% 98.5%, #8b5cf6 98.5% 99.9%);"></div>
+        <div class="pie-legend">
+          <div><span class="pie-color" style="background:#0b6b9a;"></span>Venezuela: 70,7%</div><div><span class="pie-color" style="background:#f6a300;"></span>Colombia: 21,9%</div><div><span class="pie-color" style="background:#ff3d12;"></span>Ecuador: 2,9%</div><div><span class="pie-color" style="background:#7a8791;"></span>Argentina: 1,8%</div><div><span class="pie-color" style="background:#1097ad;"></span>Perú: 1,2%</div><div><span class="pie-color" style="background:#8b5cf6;"></span>Otros: 1,4%</div>
+        </div>
       </div>
+
+      
       <p>Venezuela y Colombia representan conjuntamente el 92,6% del total, confirmando una fuerte concentración de movilidad sudamericana.</p>
 
       <h4>Nivel educativo</h4>
-      <div class="profile-data-grid">
-        <div class="profile-data-card"><h4>Primaria</h4><strong>249</strong><span>18,3%</span></div>
-        <div class="profile-data-card"><h4>Secundaria</h4><strong>516</strong><span>37,8%</span></div>
-        <div class="profile-data-card"><h4>Bachillerato</h4><strong>428</strong><span>31,4%</span></div>
-        <div class="profile-data-card"><h4>Técnico</h4><strong>112</strong><span>8,2%</span></div>
-        <div class="profile-data-card"><h4>Titulado</h4><strong>59</strong><span>4,3%</span></div>
+      <div class="pie-chart-block" aria-label="Gráfico circular de Nivel educativo">
+        <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 18.3%, #f6a300 18.3% 56.1%, #ff3d12 56.1% 87.5%, #7a8791 87.5% 95.7%, #1097ad 95.7% 100.0%);"></div>
+        <div class="pie-legend">
+          <div><span class="pie-color" style="background:#0b6b9a;"></span>Primaria: 18,3%</div><div><span class="pie-color" style="background:#f6a300;"></span>Secundaria: 37,8%</div><div><span class="pie-color" style="background:#ff3d12;"></span>Bachillerato: 31,4%</div><div><span class="pie-color" style="background:#7a8791;"></span>Técnico: 8,2%</div><div><span class="pie-color" style="background:#1097ad;"></span>Titulado: 4,3%</div>
+        </div>
       </div>
+
+      
       <p>Existe una base importante de capacidades educativas que puede favorecer inserción laboral y emprendimiento, aunque la irregularidad migratoria y la precariedad habitacional limitan su aprovechamiento.</p>
 
       <h4>Autoidentificación indígena</h4>
-      <div class="profile-data-grid">
-        <div class="profile-data-card"><h4>No</h4><strong>906</strong><span>66,4%</span></div>
-        <div class="profile-data-card"><h4>Sí</h4><strong>282</strong><span>20,7%</span></div>
-        <div class="profile-data-card"><h4>No responde</h4><strong>176</strong><span>12,9%</span></div>
+      <div class="pie-chart-block" aria-label="Gráfico circular de Autoidentificación indígena">
+        <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 66.4%, #f6a300 66.4% 87.1%, #ff3d12 87.1% 100.0%);"></div>
+        <div class="pie-legend">
+          <div><span class="pie-color" style="background:#0b6b9a;"></span>No: 66,4%</div><div><span class="pie-color" style="background:#f6a300;"></span>Sí: 20,7%</div><div><span class="pie-color" style="background:#ff3d12;"></span>No responde: 12,9%</div>
+        </div>
       </div>
+
+      
       <p>La proporción de autoidentificación indígena es relevante para incorporar pertinencia cultural, enfoque intercultural y atención a posibles barreras lingüísticas o de discriminación.</p>
     </div>
 
@@ -831,60 +837,67 @@ document.addEventListener("DOMContentLoaded", () => {
       <h3>Identidad, familia y vínculos</h3>
 
       <h4>Estado civil en el país de origen</h4>
-      <div class="profile-data-grid">
-        <div class="profile-data-card"><h4>Unión libre</h4><strong>614</strong><span>45,0%</span></div>
-        <div class="profile-data-card"><h4>Soltera/o</h4><strong>494</strong><span>36,2%</span></div>
-        <div class="profile-data-card"><h4>Separada/o</h4><strong>168</strong><span>12,3%</span></div>
-        <div class="profile-data-card"><h4>Casada/o</h4><strong>77</strong><span>5,6%</span></div>
-        <div class="profile-data-card"><h4>Viuda/o</h4><strong>11</strong><span>0,8%</span></div>
+      <div class="pie-chart-block" aria-label="Gráfico circular de Estado civil en el país de origen">
+        <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 45.0%, #f6a300 45.0% 81.2%, #ff3d12 81.2% 93.5%, #7a8791 93.5% 99.1%, #1097ad 99.1% 99.9%);"></div>
+        <div class="pie-legend">
+          <div><span class="pie-color" style="background:#0b6b9a;"></span>Unión libre: 45,0%</div><div><span class="pie-color" style="background:#f6a300;"></span>Soltera/o: 36,2%</div><div><span class="pie-color" style="background:#ff3d12;"></span>Separada/o: 12,3%</div><div><span class="pie-color" style="background:#7a8791;"></span>Casada/o: 5,6%</div><div><span class="pie-color" style="background:#1097ad;"></span>Viuda/o: 0,8%</div>
+        </div>
       </div>
 
+      
+
       <h4>Número de hijas e hijos</h4>
-      <div class="profile-data-grid">
-        <div class="profile-data-card"><h4>0</h4><strong>359</strong><span>26,3%</span></div>
-        <div class="profile-data-card"><h4>1</h4><strong>367</strong><span>26,9%</span></div>
-        <div class="profile-data-card"><h4>2</h4><strong>275</strong><span>20,2%</span></div>
-        <div class="profile-data-card"><h4>3</h4><strong>188</strong><span>13,8%</span></div>
-        <div class="profile-data-card"><h4>4</h4><strong>110</strong><span>8,1%</span></div>
-        <div class="profile-data-card"><h4>5 o más</h4><strong>65</strong><span>4,8%</span></div>
+      <div class="pie-chart-block" aria-label="Gráfico circular de Número de hijas e hijos">
+        <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 26.3%, #f6a300 26.3% 53.2%, #ff3d12 53.2% 73.4%, #7a8791 73.4% 87.2%, #1097ad 87.2% 95.3%, #8b5cf6 95.3% 100.0%);"></div>
+        <div class="pie-legend">
+          <div><span class="pie-color" style="background:#0b6b9a;"></span>0: 26,3%</div><div><span class="pie-color" style="background:#f6a300;"></span>1: 26,9%</div><div><span class="pie-color" style="background:#ff3d12;"></span>2: 20,2%</div><div><span class="pie-color" style="background:#7a8791;"></span>3: 13,8%</div><div><span class="pie-color" style="background:#1097ad;"></span>4: 8,1%</div><div><span class="pie-color" style="background:#8b5cf6;"></span>5 o más: 4,8%</div>
+        </div>
       </div>
+
+      
       <p>El 73,7% tiene al menos una hija o hijo. Los hogares con uno o dos hijos concentran 642 casos y 363 personas reportan tres o más.</p>
 
       <h4>Cuidado de hijas e hijos que permanecieron en origen</h4>
-      <div class="profile-data-grid">
-        <div class="profile-data-card"><h4>Nadie</h4><strong>417</strong><span>41,5%</span></div>
-        <div class="profile-data-card"><h4>Su madre</h4><strong>371</strong><span>36,9%</span></div>
-        <div class="profile-data-card"><h4>Abuelo materno</h4><strong>103</strong><span>10,2%</span></div>
-        <div class="profile-data-card"><h4>Abuelo paterno</h4><strong>49</strong><span>4,9%</span></div>
-        <div class="profile-data-card"><h4>Su padre</h4><strong>37</strong><span>3,7%</span></div>
-        <div class="profile-data-card"><h4>Otro familiar</h4><strong>28</strong><span>2,8%</span></div>
-        <div class="profile-data-card"><h4>Amigos</h4><strong>0</strong><span>0,0%</span></div>
+      <div class="pie-chart-block" aria-label="Gráfico circular de Cuidado de hijas e hijos que permanecieron en origen">
+        <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 41.5%, #f6a300 41.5% 78.4%, #ff3d12 78.4% 88.6%, #7a8791 88.6% 93.5%, #1097ad 93.5% 97.2%, #8b5cf6 97.2% 100.0%, #13a35b 100.0% 100.0%);"></div>
+        <div class="pie-legend">
+          <div><span class="pie-color" style="background:#0b6b9a;"></span>Nadie: 41,5%</div><div><span class="pie-color" style="background:#f6a300;"></span>Su madre: 36,9%</div><div><span class="pie-color" style="background:#ff3d12;"></span>Abuelo materno: 10,2%</div><div><span class="pie-color" style="background:#7a8791;"></span>Abuelo paterno: 4,9%</div><div><span class="pie-color" style="background:#1097ad;"></span>Su padre: 3,7%</div><div><span class="pie-color" style="background:#8b5cf6;"></span>Otro familiar: 2,8%</div><div><span class="pie-color" style="background:#13a35b;"></span>Amigos: 0,0%</div>
+        </div>
       </div>
+
+      
       <p>Base: 1.005 casos. El reducido peso del padre como cuidador muestra una distribución desigual del cuidado y la importancia de las redes femeninas y de abuelos.</p>
 
       <h4>Envío de apoyo económico</h4>
-      <div class="profile-data-grid">
-        <div class="profile-data-card"><h4>Sí</h4><strong>378</strong><span>37,6%</span></div>
-        <div class="profile-data-card"><h4>No</h4><strong>627</strong><span>62,4%</span></div>
+      <div class="pie-chart-block" aria-label="Gráfico circular de Envío de apoyo económico">
+        <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 37.6%, #f6a300 37.6% 100.0%);"></div>
+        <div class="pie-legend">
+          <div><span class="pie-color" style="background:#0b6b9a;"></span>Sí: 37,6%</div><div><span class="pie-color" style="background:#f6a300;"></span>No: 62,4%</div>
+        </div>
       </div>
+
+      
       <p>Base: 1.005 casos. La mayoría no logra generar excedentes suficientes para sostener remesas o transferencias regulares.</p>
 
       <h4>Estado civil actual</h4>
-      <div class="profile-data-grid">
-        <div class="profile-data-card"><h4>Unión libre</h4><strong>674</strong><span>49,4%</span></div>
-        <div class="profile-data-card"><h4>Soltera/o</h4><strong>527</strong><span>38,6%</span></div>
-        <div class="profile-data-card"><h4>Separada/o</h4><strong>101</strong><span>7,4%</span></div>
-        <div class="profile-data-card"><h4>Casada/o</h4><strong>55</strong><span>4,0%</span></div>
-        <div class="profile-data-card"><h4>Viuda/o</h4><strong>7</strong><span>0,5%</span></div>
+      <div class="pie-chart-block" aria-label="Gráfico circular de Estado civil actual">
+        <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 49.4%, #f6a300 49.4% 88.0%, #ff3d12 88.0% 95.4%, #7a8791 95.4% 99.4%, #1097ad 99.4% 99.9%);"></div>
+        <div class="pie-legend">
+          <div><span class="pie-color" style="background:#0b6b9a;"></span>Unión libre: 49,4%</div><div><span class="pie-color" style="background:#f6a300;"></span>Soltera/o: 38,6%</div><div><span class="pie-color" style="background:#ff3d12;"></span>Separada/o: 7,4%</div><div><span class="pie-color" style="background:#7a8791;"></span>Casada/o: 4,0%</div><div><span class="pie-color" style="background:#1097ad;"></span>Viuda/o: 0,5%</div>
+        </div>
       </div>
 
+      
+
       <h4>Tipología familiar</h4>
-      <div class="profile-data-grid">
-        <div class="profile-data-card"><h4>Reconstruida o simultánea</h4><strong>559</strong><span>41,0%</span></div>
-        <div class="profile-data-card"><h4>Nuclear</h4><strong>396</strong><span>29,0%</span></div>
-        <div class="profile-data-card"><h4>Monoparental</h4><strong>292</strong><span>21,4%</span></div>
-        <div class="profile-data-card"><h4>Extensa o ampliada</h4><strong>117</strong><span>8,6%</span></div>
+      <div class="pie-chart-block" aria-label="Gráfico circular de Tipología familiar">
+        <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 41.0%, #f6a300 41.0% 70.0%, #ff3d12 70.0% 91.4%, #7a8791 91.4% 100.0%);"></div>
+        <div class="pie-legend">
+          <div><span class="pie-color" style="background:#0b6b9a;"></span>Reconstruida o simultánea: 41,0%</div><div><span class="pie-color" style="background:#f6a300;"></span>Nuclear: 29,0%</div><div><span class="pie-color" style="background:#ff3d12;"></span>Monoparental: 21,4%</div><div><span class="pie-color" style="background:#7a8791;"></span>Extensa o ampliada: 8,6%</div>
+        </div>
       </div>
+
+      
       <p>La elevada proporción de familias reconstruidas muestra procesos de recomposición de vínculos y convivencia propios de trayectorias migratorias prolongadas.</p>
     </div>
 
@@ -892,46 +905,46 @@ document.addEventListener("DOMContentLoaded", () => {
       <h3>Dinámica y trayectoria migratoria</h3>
 
       <h4>Causas de migración</h4>
-      <div class="profile-data-grid">
-        <div class="profile-data-card"><h4>Laboral / económica</h4><strong>1.116</strong><span>81,8%</span></div>
-        <div class="profile-data-card"><h4>Conflictos armados</h4><strong>192</strong><span>14,1%</span></div>
-        <div class="profile-data-card"><h4>Violencia</h4><strong>21</strong><span>1,5%</span></div>
-        <div class="profile-data-card"><h4>Crisis política</h4><strong>19</strong><span>1,4%</span></div>
-        <div class="profile-data-card"><h4>Ecológica</h4><strong>6</strong><span>0,4%</span></div>
-        <div class="profile-data-card"><h4>Opinión política</h4><strong>5</strong><span>0,4%</span></div>
-        <div class="profile-data-card"><h4>Conflictos internos</h4><strong>3</strong><span>0,2%</span></div>
-        <div class="profile-data-card"><h4>Religión</h4><strong>1</strong><span>0,1%</span></div>
-        <div class="profile-data-card"><h4>Violación masiva de DDHH</h4><strong>1</strong><span>0,1%</span></div>
+      <div class="pie-chart-block" aria-label="Gráfico circular de Causas de migración">
+        <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 81.8%, #f6a300 81.8% 95.9%, #ff3d12 95.9% 97.4%, #7a8791 97.4% 98.8%, #1097ad 98.8% 99.2%, #8b5cf6 99.2% 99.6%, #13a35b 99.6% 99.8%, #d946ef 99.8% 99.9%, #94a3b8 99.9% 100.0%);"></div>
+        <div class="pie-legend">
+          <div><span class="pie-color" style="background:#0b6b9a;"></span>Laboral / económica: 81,8%</div><div><span class="pie-color" style="background:#f6a300;"></span>Conflictos armados: 14,1%</div><div><span class="pie-color" style="background:#ff3d12;"></span>Violencia: 1,5%</div><div><span class="pie-color" style="background:#7a8791;"></span>Crisis política: 1,4%</div><div><span class="pie-color" style="background:#1097ad;"></span>Ecológica: 0,4%</div><div><span class="pie-color" style="background:#8b5cf6;"></span>Opinión política: 0,4%</div><div><span class="pie-color" style="background:#13a35b;"></span>Conflictos internos: 0,2%</div><div><span class="pie-color" style="background:#d946ef;"></span>Religión: 0,1%</div><div><span class="pie-color" style="background:#94a3b8;"></span>Violación masiva de DDHH: 0,1%</div>
+        </div>
       </div>
+
+      
       <p>Las motivaciones combinan necesidad económica y factores de protección; por ello, debe evitarse una separación rígida entre migración económica y migración forzada.</p>
 
       <h4>Tipo de ingreso</h4>
-      <div class="profile-data-grid">
-        <div class="profile-data-card"><h4>Irregular</h4><strong>1.297</strong><span>95,1%</span></div>
-        <div class="profile-data-card"><h4>Regular</h4><strong>67</strong><span>4,9%</span></div>
+      <div class="pie-chart-block" aria-label="Gráfico circular de Tipo de ingreso">
+        <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 95.1%, #f6a300 95.1% 100.0%);"></div>
+        <div class="pie-legend">
+          <div><span class="pie-color" style="background:#0b6b9a;"></span>Irregular: 95,1%</div><div><span class="pie-color" style="background:#f6a300;"></span>Regular: 4,9%</div>
+        </div>
       </div>
 
+      
+
       <h4>Documentación declarada entre personas con ingreso irregular</h4>
-      <div class="profile-data-grid">
-        <div class="profile-data-card"><h4>Cédula de identidad</h4><strong>868</strong><span>66,9%</span></div>
-        <div class="profile-data-card"><h4>Ningún documento</h4><strong>295</strong><span>22,7%</span></div>
-        <div class="profile-data-card"><h4>Carta de denuncia</h4><strong>89</strong><span>6,9%</span></div>
-        <div class="profile-data-card"><h4>Residencia de otro país</h4><strong>27</strong><span>2,1%</span></div>
-        <div class="profile-data-card"><h4>Pasaporte</h4><strong>18</strong><span>1,4%</span></div>
+      <div class="pie-chart-block" aria-label="Gráfico circular de Documentación declarada entre personas con ingreso irregular">
+        <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 66.9%, #f6a300 66.9% 89.6%, #ff3d12 89.6% 96.5%, #7a8791 96.5% 98.6%, #1097ad 98.6% 100.0%);"></div>
+        <div class="pie-legend">
+          <div><span class="pie-color" style="background:#0b6b9a;"></span>C.I.: 66,9%</div><div><span class="pie-color" style="background:#f6a300;"></span>Ningún documento: 22,7%</div><div><span class="pie-color" style="background:#ff3d12;"></span>Carta de denuncia: 6,9%</div><div><span class="pie-color" style="background:#7a8791;"></span>Residencia de otro país: 2,1%</div><div><span class="pie-color" style="background:#1097ad;"></span>Pasaporte: 1,4%</div>
+        </div>
       </div>
+
+      
       <p>Base: 1.297 personas. La irregularidad no equivale necesariamente a ausencia de identidad documental, aunque 295 personas sin documentación requieren atención prioritaria.</p>
 
       <h4>Motivo y proyecto migratorio</h4>
-      <div class="profile-data-grid">
-        <div class="profile-data-card"><h4>Tránsito a otro país</h4><strong>1.141</strong><span>83,7%</span></div>
-        <div class="profile-data-card"><h4>Permanencia</h4><strong>128</strong><span>9,4%</span></div>
-        <div class="profile-data-card"><h4>Retorno a su país</h4><strong>90</strong><span>6,6%</span></div>
-        <div class="profile-data-card"><h4>Reunificación familiar</h4><strong>4</strong><span>0,3%</span></div>
-        <div class="profile-data-card"><h4>Trabajo</h4><strong>1</strong><span>0,1%</span></div>
-        <div class="profile-data-card"><h4>Salud</h4><strong>0</strong><span>0,0%</span></div>
-        <div class="profile-data-card"><h4>Estudios</h4><strong>0</strong><span>0,0%</span></div>
-        <div class="profile-data-card"><h4>Mayor seguridad</h4><strong>0</strong><span>0,0%</span></div>
+      <div class="pie-chart-block" aria-label="Gráfico circular de Motivo y proyecto migratorio">
+        <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 83.7%, #f6a300 83.7% 93.1%, #ff3d12 93.1% 99.7%, #7a8791 99.7% 100.0%, #1097ad 100.0% 100.0%, #8b5cf6 100.1% 100.0%, #13a35b 100.1% 100.0%, #d946ef 100.1% 100.0%);"></div>
+        <div class="pie-legend">
+          <div><span class="pie-color" style="background:#0b6b9a;"></span>Tránsito a otro país: 83,7%</div><div><span class="pie-color" style="background:#f6a300;"></span>Permanencia: 9,4%</div><div><span class="pie-color" style="background:#ff3d12;"></span>Retorno a su país: 6,6%</div><div><span class="pie-color" style="background:#7a8791;"></span>Reunificación familiar: 0,3%</div><div><span class="pie-color" style="background:#1097ad;"></span>Trabajo: 0,1%</div><div><span class="pie-color" style="background:#8b5cf6;"></span>Salud: 0,0%</div><div><span class="pie-color" style="background:#13a35b;"></span>Estudios: 0,0%</div><div><span class="pie-color" style="background:#d946ef;"></span>Mayor seguridad: 0,0%</div>
+        </div>
       </div>
+
+      
       <p>Bolivia y particularmente El Alto funcionan como nodos de tránsito, aunque una fracción modifica su proyecto y permanece, exigiendo combinar asistencia de emergencia con integración.</p>
     </div>
 
@@ -939,56 +952,46 @@ document.addEventListener("DOMContentLoaded", () => {
       <h3>Protección, violencia y riesgos</h3>
 
       <h4>Violencia durante el viaje por parte de la población</h4>
-      <div class="profile-data-grid">
-        <div class="profile-data-card"><h4>Ninguna</h4><strong>647</strong><span>47,4%</span></div>
-        <div class="profile-data-card"><h4>Xenofobia</h4><strong>215</strong><span>15,8%</span></div>
-        <div class="profile-data-card"><h4>Discriminación</h4><strong>211</strong><span>15,5%</span></div>
-        <div class="profile-data-card"><h4>Robo</h4><strong>192</strong><span>14,1%</span></div>
-        <div class="profile-data-card"><h4>Extorsión</h4><strong>50</strong><span>3,7%</span></div>
-        <div class="profile-data-card"><h4>Física</h4><strong>25</strong><span>1,8%</span></div>
-        <div class="profile-data-card"><h4>Verbal</h4><strong>13</strong><span>1,0%</span></div>
-        <div class="profile-data-card"><h4>Secuestro</h4><strong>7</strong><span>0,5%</span></div>
-        <div class="profile-data-card"><h4>Sexual</h4><strong>3</strong><span>0,2%</span></div>
-        <div class="profile-data-card"><h4>Económica</h4><strong>1</strong><span>0,1%</span></div>
+      <div class="pie-chart-block" aria-label="Gráfico circular de Violencia durante el viaje por parte de la población">
+        <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 47.4%, #f6a300 47.4% 63.2%, #ff3d12 63.2% 78.7%, #7a8791 78.7% 92.8%, #1097ad 92.8% 96.5%, #8b5cf6 96.5% 98.3%, #13a35b 98.3% 99.3%, #d946ef 99.3% 99.8%, #94a3b8 99.8% 100.0%, #111827 100.0% 100.0%);"></div>
+        <div class="pie-legend">
+          <div><span class="pie-color" style="background:#0b6b9a;"></span>Ninguna: 47,4%</div><div><span class="pie-color" style="background:#f6a300;"></span>Xenofobia: 15,8%</div><div><span class="pie-color" style="background:#ff3d12;"></span>Discriminación: 15,5%</div><div><span class="pie-color" style="background:#7a8791;"></span>Robo: 14,1%</div><div><span class="pie-color" style="background:#1097ad;"></span>Extorsión: 3,7%</div><div><span class="pie-color" style="background:#8b5cf6;"></span>Física: 1,8%</div><div><span class="pie-color" style="background:#13a35b;"></span>Verbal: 1,0%</div><div><span class="pie-color" style="background:#d946ef;"></span>Secuestro: 0,5%</div><div><span class="pie-color" style="background:#94a3b8;"></span>Sexual: 0,2%</div><div><span class="pie-color" style="background:#111827;"></span>Económica: 0,1%</div>
+        </div>
       </div>
+
+      
       <p>717 personas (52,6%) reportaron alguna forma de violencia por parte de la población durante el viaje.</p>
 
       <h4>Violencia durante el viaje por parte de la familia</h4>
-      <div class="profile-data-grid">
-        <div class="profile-data-card"><h4>Ninguna</h4><strong>1.339</strong><span>98,2%</span></div>
-        <div class="profile-data-card"><h4>Verbal</h4><strong>6</strong><span>0,4%</span></div>
-        <div class="profile-data-card"><h4>Física</h4><strong>6</strong><span>0,4%</span></div>
-        <div class="profile-data-card"><h4>Robo</h4><strong>6</strong><span>0,4%</span></div>
-        <div class="profile-data-card"><h4>Xenofobia</h4><strong>3</strong><span>0,2%</span></div>
-        <div class="profile-data-card"><h4>Sexual</h4><strong>1</strong><span>0,1%</span></div>
-        <div class="profile-data-card"><h4>Discriminación</h4><strong>1</strong><span>0,1%</span></div>
-        <div class="profile-data-card"><h4>Secuestro</h4><strong>1</strong><span>0,1%</span></div>
-        <div class="profile-data-card"><h4>Económica</h4><strong>1</strong><span>0,1%</span></div>
-        <div class="profile-data-card"><h4>Extorsión</h4><strong>0</strong><span>0,0%</span></div>
+      <div class="pie-chart-block" aria-label="Gráfico circular de Violencia durante el viaje por parte de la familia">
+        <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 98.2%, #f6a300 98.2% 98.6%, #ff3d12 98.6% 99.0%, #7a8791 99.0% 99.4%, #1097ad 99.4% 99.6%, #8b5cf6 99.6% 99.7%, #13a35b 99.7% 99.8%, #d946ef 99.8% 99.9%, #94a3b8 99.9% 100.0%, #111827 100.0% 100.0%);"></div>
+        <div class="pie-legend">
+          <div><span class="pie-color" style="background:#0b6b9a;"></span>Ninguna: 98,2%</div><div><span class="pie-color" style="background:#f6a300;"></span>Verbal: 0,4%</div><div><span class="pie-color" style="background:#ff3d12;"></span>Física: 0,4%</div><div><span class="pie-color" style="background:#7a8791;"></span>Robo: 0,4%</div><div><span class="pie-color" style="background:#1097ad;"></span>Xenofobia: 0,2%</div><div><span class="pie-color" style="background:#8b5cf6;"></span>Sexual: 0,1%</div><div><span class="pie-color" style="background:#13a35b;"></span>Discriminación: 0,1%</div><div><span class="pie-color" style="background:#d946ef;"></span>Secuestro: 0,1%</div><div><span class="pie-color" style="background:#94a3b8;"></span>Económica: 0,1%</div><div><span class="pie-color" style="background:#111827;"></span>Extorsión: 0,0%</div>
+        </div>
       </div>
 
+      
+
       <h4>Violencia en Bolivia por parte de la población</h4>
-      <div class="profile-data-grid">
-        <div class="profile-data-card"><h4>Ninguna</h4><strong>1.146</strong><span>84,0%</span></div>
-        <div class="profile-data-card"><h4>Discriminación</h4><strong>101</strong><span>7,4%</span></div>
-        <div class="profile-data-card"><h4>Robo</h4><strong>38</strong><span>2,8%</span></div>
-        <div class="profile-data-card"><h4>Extorsión</h4><strong>32</strong><span>2,3%</span></div>
-        <div class="profile-data-card"><h4>Xenofobia</h4><strong>25</strong><span>1,8%</span></div>
-        <div class="profile-data-card"><h4>Verbal</h4><strong>13</strong><span>1,0%</span></div>
-        <div class="profile-data-card"><h4>Física</h4><strong>8</strong><span>0,6%</span></div>
-        <div class="profile-data-card"><h4>Secuestro</h4><strong>1</strong><span>0,1%</span></div>
-        <div class="profile-data-card"><h4>Sexual</h4><strong>0</strong><span>0,0%</span></div>
-        <div class="profile-data-card"><h4>Económica</h4><strong>0</strong><span>0,0%</span></div>
+      <div class="pie-chart-block" aria-label="Gráfico circular de Violencia en Bolivia por parte de la población">
+        <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 84.0%, #f6a300 84.0% 91.4%, #ff3d12 91.4% 94.2%, #7a8791 94.2% 96.5%, #1097ad 96.5% 98.3%, #8b5cf6 98.3% 99.3%, #13a35b 99.3% 99.9%, #d946ef 99.9% 100.0%, #94a3b8 100.0% 100.0%, #111827 100.0% 100.0%);"></div>
+        <div class="pie-legend">
+          <div><span class="pie-color" style="background:#0b6b9a;"></span>Ninguna: 84,0%</div><div><span class="pie-color" style="background:#f6a300;"></span>Discriminación: 7,4%</div><div><span class="pie-color" style="background:#ff3d12;"></span>Robo: 2,8%</div><div><span class="pie-color" style="background:#7a8791;"></span>Extorsión: 2,3%</div><div><span class="pie-color" style="background:#1097ad;"></span>Xenofobia: 1,8%</div><div><span class="pie-color" style="background:#8b5cf6;"></span>Verbal: 1,0%</div><div><span class="pie-color" style="background:#13a35b;"></span>Física: 0,6%</div><div><span class="pie-color" style="background:#d946ef;"></span>Secuestro: 0,1%</div><div><span class="pie-color" style="background:#94a3b8;"></span>Sexual: 0,0%</div><div><span class="pie-color" style="background:#111827;"></span>Económica: 0,0%</div>
+        </div>
       </div>
+
+      
       <p>218 personas (16,0%) señalaron algún hecho de violencia por parte de la población en Bolivia.</p>
 
       <h4>Violencia en Bolivia por parte de la familia</h4>
-      <div class="profile-data-grid">
-        <div class="profile-data-card"><h4>Ninguna</h4><strong>1.356</strong><span>99,4%</span></div>
-        <div class="profile-data-card"><h4>Discriminación</h4><strong>4</strong><span>0,3%</span></div>
-        <div class="profile-data-card"><h4>Xenofobia</h4><strong>2</strong><span>0,1%</span></div>
-        <div class="profile-data-card"><h4>Extorsión</h4><strong>2</strong><span>0,1%</span></div>
+      <div class="pie-chart-block" aria-label="Gráfico circular de Violencia en Bolivia por parte de la familia">
+        <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 99.4%, #f6a300 99.4% 99.7%, #ff3d12 99.7% 99.8%, #7a8791 99.8% 99.9%);"></div>
+        <div class="pie-legend">
+          <div><span class="pie-color" style="background:#0b6b9a;"></span>Ninguna: 99,4%</div><div><span class="pie-color" style="background:#f6a300;"></span>Discriminación: 0,3%</div><div><span class="pie-color" style="background:#ff3d12;"></span>Xenofobia: 0,1%</div><div><span class="pie-color" style="background:#7a8791;"></span>Extorsión: 0,1%</div>
+        </div>
       </div>
+
+      
       <p>Aunque los registros son reducidos, este tipo de violencia puede estar subregistrado; conviene mantener canales seguros de identificación y acompañamiento.</p>
     </div>
 
@@ -996,42 +999,44 @@ document.addEventListener("DOMContentLoaded", () => {
       <h3>Redes de apoyo y asistencia humanitaria</h3>
 
       <h4>Ayuda recibida durante el viaje</h4>
-      <div class="profile-data-grid">
-        <div class="profile-data-card"><h4>Alguna institución</h4><strong>918</strong><span>67,3%</span></div>
-        <div class="profile-data-card"><h4>Ninguna</h4><strong>422</strong><span>30,9%</span></div>
-        <div class="profile-data-card"><h4>Población</h4><strong>20</strong><span>1,5%</span></div>
-        <div class="profile-data-card"><h4>Familia y amigos</h4><strong>4</strong><span>0,3%</span></div>
-        <div class="profile-data-card"><h4>Embajada</h4><strong>0</strong><span>0,0%</span></div>
+      <div class="pie-chart-block" aria-label="Gráfico circular de Ayuda recibida durante el viaje">
+        <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 67.3%, #f6a300 67.3% 98.2%, #ff3d12 98.2% 99.7%, #7a8791 99.7% 100.0%, #1097ad 100.0% 100.0%);"></div>
+        <div class="pie-legend">
+          <div><span class="pie-color" style="background:#0b6b9a;"></span>Alguna institución: 67,3%</div><div><span class="pie-color" style="background:#f6a300;"></span>Ninguna: 30,9%</div><div><span class="pie-color" style="background:#ff3d12;"></span>Población: 1,5%</div><div><span class="pie-color" style="background:#7a8791;"></span>Familia y amigos: 0,3%</div><div><span class="pie-color" style="background:#1097ad;"></span>Embajada: 0,0%</div>
+        </div>
       </div>
+
+      
 
       <h4>Tipo de ayuda durante el viaje</h4>
-      <div class="profile-data-grid">
-        <div class="profile-data-card"><h4>Alimentación</h4><strong>623</strong><span>45,7%</span></div>
-        <div class="profile-data-card"><h4>Ninguna</h4><strong>530</strong><span>38,9%</span></div>
-        <div class="profile-data-card"><h4>Hospedaje</h4><strong>86</strong><span>6,3%</span></div>
-        <div class="profile-data-card"><h4>Otro tipo</h4><strong>81</strong><span>5,9%</span></div>
-        <div class="profile-data-card"><h4>Ropa</h4><strong>32</strong><span>2,3%</span></div>
-        <div class="profile-data-card"><h4>Atención médica</h4><strong>12</strong><span>0,9%</span></div>
+      <div class="pie-chart-block" aria-label="Gráfico circular de Tipo de ayuda durante el viaje">
+        <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 45.7%, #f6a300 45.7% 84.6%, #ff3d12 84.6% 90.9%, #7a8791 90.9% 96.8%, #1097ad 96.8% 99.1%, #8b5cf6 99.1% 100.0%);"></div>
+        <div class="pie-legend">
+          <div><span class="pie-color" style="background:#0b6b9a;"></span>Alimentación: 45,7%</div><div><span class="pie-color" style="background:#f6a300;"></span>Ninguna: 38,9%</div><div><span class="pie-color" style="background:#ff3d12;"></span>Hospedaje: 6,3%</div><div><span class="pie-color" style="background:#7a8791;"></span>Otro tipo: 5,9%</div><div><span class="pie-color" style="background:#1097ad;"></span>Ropa: 2,3%</div><div><span class="pie-color" style="background:#8b5cf6;"></span>Atención médica: 0,9%</div>
+        </div>
       </div>
+
+      
 
       <h4>Ayuda recibida en Bolivia</h4>
-      <div class="profile-data-grid">
-        <div class="profile-data-card"><h4>Alguna institución</h4><strong>740</strong><span>54,3%</span></div>
-        <div class="profile-data-card"><h4>Ninguna</h4><strong>576</strong><span>42,2%</span></div>
-        <div class="profile-data-card"><h4>Población</h4><strong>46</strong><span>3,4%</span></div>
-        <div class="profile-data-card"><h4>Embajada</h4><strong>1</strong><span>0,1%</span></div>
-        <div class="profile-data-card"><h4>Familia y amigos</h4><strong>1</strong><span>0,1%</span></div>
+      <div class="pie-chart-block" aria-label="Gráfico circular de Ayuda recibida en Bolivia">
+        <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 54.3%, #f6a300 54.3% 96.5%, #ff3d12 96.5% 99.9%, #7a8791 99.9% 100.0%, #1097ad 100.0% 100.0%);"></div>
+        <div class="pie-legend">
+          <div><span class="pie-color" style="background:#0b6b9a;"></span>Alguna institución: 54,3%</div><div><span class="pie-color" style="background:#f6a300;"></span>Ninguna: 42,2%</div><div><span class="pie-color" style="background:#ff3d12;"></span>Población: 3,4%</div><div><span class="pie-color" style="background:#7a8791;"></span>Embajada: 0,1%</div><div><span class="pie-color" style="background:#1097ad;"></span>Familia y amigos: 0,1%</div>
+        </div>
       </div>
 
+      
+
       <h4>Tipo de ayuda brindada en Bolivia</h4>
-      <div class="profile-data-grid">
-        <div class="profile-data-card"><h4>Ninguna</h4><strong>610</strong><span>44,7%</span></div>
-        <div class="profile-data-card"><h4>Hospedaje</h4><strong>547</strong><span>40,1%</span></div>
-        <div class="profile-data-card"><h4>Alimentación</h4><strong>101</strong><span>7,4%</span></div>
-        <div class="profile-data-card"><h4>Otro tipo</h4><strong>43</strong><span>3,2%</span></div>
-        <div class="profile-data-card"><h4>Ropa</h4><strong>41</strong><span>3,0%</span></div>
-        <div class="profile-data-card"><h4>Atención médica</h4><strong>22</strong><span>1,6%</span></div>
+      <div class="pie-chart-block" aria-label="Gráfico circular de Tipo de ayuda brindada en Bolivia">
+        <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 44.7%, #f6a300 44.7% 84.8%, #ff3d12 84.8% 92.2%, #7a8791 92.2% 95.4%, #1097ad 95.4% 98.4%, #8b5cf6 98.4% 100.0%);"></div>
+        <div class="pie-legend">
+          <div><span class="pie-color" style="background:#0b6b9a;"></span>Ninguna: 44,7%</div><div><span class="pie-color" style="background:#f6a300;"></span>Hospedaje: 40,1%</div><div><span class="pie-color" style="background:#ff3d12;"></span>Alimentación: 7,4%</div><div><span class="pie-color" style="background:#7a8791;"></span>Otro tipo: 3,2%</div><div><span class="pie-color" style="background:#1097ad;"></span>Ropa: 3,0%</div><div><span class="pie-color" style="background:#8b5cf6;"></span>Atención médica: 1,6%</div>
+        </div>
       </div>
+
+      
       <p>La alta presencia de apoyo institucional demuestra que las organizaciones humanitarias constituyen una red de protección decisiva.</p>
     </div>
 
@@ -1039,44 +1044,56 @@ document.addEventListener("DOMContentLoaded", () => {
       <h3>Habitabilidad y salud</h3>
 
       <h4>Condición de habitabilidad</h4>
-      <div class="profile-data-grid">
-        <div class="profile-data-card"><h4>Situación de calle</h4><strong>957</strong><span>70,2%</span></div>
-        <div class="profile-data-card"><h4>Albergue o refugio</h4><strong>122</strong><span>8,9%</span></div>
-        <div class="profile-data-card"><h4>Hospedaje individual</h4><strong>96</strong><span>7,0%</span></div>
-        <div class="profile-data-card"><h4>Alquiler individual</h4><strong>87</strong><span>6,4%</span></div>
-        <div class="profile-data-card"><h4>Hospedaje en grupo</h4><strong>49</strong><span>3,6%</span></div>
-        <div class="profile-data-card"><h4>Otro</h4><strong>27</strong><span>2,0%</span></div>
-        <div class="profile-data-card"><h4>Alquiler grupal</h4><strong>26</strong><span>1,9%</span></div>
+      <div class="pie-chart-block" aria-label="Gráfico circular de Condición de habitabilidad">
+        <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 70.2%, #f6a300 70.2% 79.1%, #ff3d12 79.1% 86.1%, #7a8791 86.1% 92.5%, #1097ad 92.5% 96.1%, #8b5cf6 96.1% 98.1%, #13a35b 98.1% 100.0%);"></div>
+        <div class="pie-legend">
+          <div><span class="pie-color" style="background:#0b6b9a;"></span>Situación de calle: 70,2%</div><div><span class="pie-color" style="background:#f6a300;"></span>Albergue o refugio: 8,9%</div><div><span class="pie-color" style="background:#ff3d12;"></span>Hospedaje individual: 7,0%</div><div><span class="pie-color" style="background:#7a8791;"></span>Alquiler individual: 6,4%</div><div><span class="pie-color" style="background:#1097ad;"></span>Hospedaje en grupo: 3,6%</div><div><span class="pie-color" style="background:#8b5cf6;"></span>Otro: 2,0%</div><div><span class="pie-color" style="background:#13a35b;"></span>Alquiler grupal: 1,9%</div>
+        </div>
       </div>
+
+      
       <p>La situación de calle es la expresión más crítica del perfil habitacional y amplifica riesgos de violencia, enfermedad, inseguridad alimentaria y pérdida de documentación.</p>
 
       <h4>Presencia de enfermedad</h4>
-      <div class="profile-data-grid">
-        <div class="profile-data-card"><h4>Sí</h4><strong>436</strong><span>32,0%</span></div>
-        <div class="profile-data-card"><h4>No</h4><strong>928</strong><span>68,0%</span></div>
+      <div class="pie-chart-block" aria-label="Gráfico circular de Presencia de enfermedad">
+        <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 32.0%, #f6a300 32.0% 100.0%);"></div>
+        <div class="pie-legend">
+          <div><span class="pie-color" style="background:#0b6b9a;"></span>Sí: 32,0%</div><div><span class="pie-color" style="background:#f6a300;"></span>No: 68,0%</div>
+        </div>
       </div>
 
+      
+
       <h4>Antecedente de COVID-19</h4>
-      <div class="profile-data-grid">
-        <div class="profile-data-card"><h4>Sí</h4><strong>44</strong><span>3,2%</span></div>
-        <div class="profile-data-card"><h4>No</h4><strong>1.320</strong><span>96,8%</span></div>
+      <div class="pie-chart-block" aria-label="Gráfico circular de Antecedente de COVID-19">
+        <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 3.2%, #f6a300 3.2% 100.0%);"></div>
+        <div class="pie-legend">
+          <div><span class="pie-color" style="background:#0b6b9a;"></span>Sí: 3,2%</div><div><span class="pie-color" style="background:#f6a300;"></span>No: 96,8%</div>
+        </div>
       </div>
+
+      
       <p>La baja cifra puede reflejar ausencia de diagnóstico, dificultades de acceso a pruebas o subregistro y debe interpretarse con cautela.</p>
 
       <h4>Conocimiento de personas con COVID-19</h4>
-      <div class="profile-data-grid">
-        <div class="profile-data-card"><h4>Sí</h4><strong>59</strong><span>4,3%</span></div>
-        <div class="profile-data-card"><h4>No</h4><strong>1.305</strong><span>95,7%</span></div>
+      <div class="pie-chart-block" aria-label="Gráfico circular de Conocimiento de personas con COVID-19">
+        <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 4.3%, #f6a300 4.3% 100.0%);"></div>
+        <div class="pie-legend">
+          <div><span class="pie-color" style="background:#0b6b9a;"></span>Sí: 4,3%</div><div><span class="pie-color" style="background:#f6a300;"></span>No: 95,7%</div>
+        </div>
       </div>
 
+      
+
       <h4>Medidas de prevención</h4>
-      <div class="profile-data-grid">
-        <div class="profile-data-card"><h4>Otras medidas</h4><strong>1.193</strong><span>87,5%</span></div>
-        <div class="profile-data-card"><h4>Solo barbijo</h4><strong>157</strong><span>11,5%</span></div>
-        <div class="profile-data-card"><h4>Gel o alcohol</h4><strong>11</strong><span>0,8%</span></div>
-        <div class="profile-data-card"><h4>Lavado de manos</h4><strong>3</strong><span>0,2%</span></div>
-        <div class="profile-data-card"><h4>Distanciamiento social</h4><strong>0</strong><span>0,0%</span></div>
+      <div class="pie-chart-block" aria-label="Gráfico circular de Medidas de prevención">
+        <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 87.5%, #f6a300 87.5% 99.0%, #ff3d12 99.0% 99.8%, #7a8791 99.8% 100.0%, #1097ad 100.0% 100.0%);"></div>
+        <div class="pie-legend">
+          <div><span class="pie-color" style="background:#0b6b9a;"></span>Otras medidas: 87,5%</div><div><span class="pie-color" style="background:#f6a300;"></span>Solo barbijo: 11,5%</div><div><span class="pie-color" style="background:#ff3d12;"></span>Gel o alcohol: 0,8%</div><div><span class="pie-color" style="background:#7a8791;"></span>Lavado de manos: 0,2%</div><div><span class="pie-color" style="background:#1097ad;"></span>Distanciamiento social: 0,0%</div>
+        </div>
       </div>
+
+      
       <p>La amplitud de la categoría “otras medidas” limita una interpretación precisa; se recomienda desagregarla en futuros registros.</p>
     </div>
 
@@ -1084,59 +1101,60 @@ document.addEventListener("DOMContentLoaded", () => {
       <h3>Atención social e institucional</h3>
 
       <h4>Atenciones sociales registradas</h4>
-      <div class="profile-data-grid">
-        <div class="profile-data-card"><h4>Atención social</h4><strong>1.364</strong><span>registros</span></div>
-        <div class="profile-data-card"><h4>Seguimiento social</h4><strong>2.740</strong><span>registros</span></div>
-        <div class="profile-data-card"><h4>Atención a hijos</h4><strong>637</strong><span>registros</span></div>
-      </div>
+      
       <p>El volumen de seguimientos, superior al número de atenciones iniciales, evidencia que una parte importante de los casos requiere intervención continuada. Las categorías representan registros de servicio, pueden superponerse y no deben sumarse como personas únicas.</p>
 
       <h4>Atención y seguimiento legal</h4>
-      <div class="profile-data-grid">
-        <div class="profile-data-card"><h4>Atención legal</h4><strong>428</strong><span>56,2%</span></div>
-        <div class="profile-data-card"><h4>Seguimiento legal</h4><strong>333</strong><span>43,8%</span></div>
+      <div class="pie-chart-block" aria-label="Gráfico circular de Atención y seguimiento legal">
+        <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 56.2%, #f6a300 56.2% 100.0%);"></div>
+        <div class="pie-legend">
+          <div><span class="pie-color" style="background:#0b6b9a;"></span>Atención legal: 56,2%</div><div><span class="pie-color" style="background:#f6a300;"></span>Seguimiento legal: 43,8%</div>
+        </div>
       </div>
+
+      
       <p>Total operativo: 761 actuaciones jurídicas.</p>
 
       <h4>Lugar de atención</h4>
-      <div class="profile-data-grid">
-        <div class="profile-data-card"><h4>El Alto</h4><strong>1.354</strong><span>91,4%</span></div>
-        <div class="profile-data-card"><h4>La Paz</h4><strong>128</strong><span>8,6%</span></div>
+      <div class="pie-chart-block" aria-label="Gráfico circular de Lugar de atención">
+        <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 91.4%, #f6a300 91.4% 100.0%);"></div>
+        <div class="pie-legend">
+          <div><span class="pie-color" style="background:#0b6b9a;"></span>El Alto: 91,4%</div><div><span class="pie-color" style="background:#f6a300;"></span>La Paz: 8,6%</div>
+        </div>
       </div>
+
+      
       <p>Total: 1.482 registros de atención. Pueden existir múltiples intervenciones para una misma persona.</p>
 
       <h4>Estado migratorio de las personas atendidas legalmente</h4>
-      <div class="profile-data-grid">
-        <div class="profile-data-card"><h4>Irregular</h4><strong>297</strong><span>69,4%</span></div>
-        <div class="profile-data-card"><h4>Regular</h4><strong>78</strong><span>18,2%</span></div>
-        <div class="profile-data-card"><h4>Nacido en Bolivia</h4><strong>31</strong><span>7,2%</span></div>
-        <div class="profile-data-card"><h4>Solicitante de refugio</h4><strong>22</strong><span>5,1%</span></div>
-        <div class="profile-data-card"><h4>Refugiada/o</h4><strong>0</strong><span>0,0%</span></div>
+      <div class="pie-chart-block" aria-label="Gráfico circular de Estado migratorio de las personas atendidas legalmente">
+        <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 69.4%, #f6a300 69.4% 87.6%, #ff3d12 87.6% 94.8%, #7a8791 94.8% 99.9%, #1097ad 99.9% 99.9%);"></div>
+        <div class="pie-legend">
+          <div><span class="pie-color" style="background:#0b6b9a;"></span>Irregular: 69,4%</div><div><span class="pie-color" style="background:#f6a300;"></span>Regular: 18,2%</div><div><span class="pie-color" style="background:#ff3d12;"></span>Nacido en Bolivia: 7,2%</div><div><span class="pie-color" style="background:#7a8791;"></span>Solicitante de refugio: 5,1%</div><div><span class="pie-color" style="background:#1097ad;"></span>Refugiada/o: 0,0%</div>
+        </div>
       </div>
+
+      
 
       <h4>Tipo de atención legal</h4>
-      <div class="profile-data-grid">
-        <div class="profile-data-card"><h4>Orientación legal</h4><strong>421</strong><span>98,4%</span></div>
-        <div class="profile-data-card"><h4>Acompañamiento y asesoramiento</h4><strong>6</strong><span>1,4%</span></div>
-        <div class="profile-data-card"><h4>Representación legal</h4><strong>1</strong><span>0,2%</span></div>
+      <div class="pie-chart-block" aria-label="Gráfico circular de Tipo de atención legal">
+        <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 98.4%, #f6a300 98.4% 99.8%, #ff3d12 99.8% 100.0%);"></div>
+        <div class="pie-legend">
+          <div><span class="pie-color" style="background:#0b6b9a;"></span>Orientación legal: 98,4%</div><div><span class="pie-color" style="background:#f6a300;"></span>Acompañamiento y asesoramiento: 1,4%</div><div><span class="pie-color" style="background:#ff3d12;"></span>Representación legal: 0,2%</div>
+        </div>
       </div>
 
+      
+
       <h4>Solicitudes y trámites jurídicos</h4>
-      <div class="profile-data-grid">
-        <div class="profile-data-card"><h4>Otros</h4><strong>284</strong><span>66,4%</span></div>
-        <div class="profile-data-card"><h4>Permanencia temporal por familia</h4><strong>40</strong><span>9,3%</span></div>
-        <div class="profile-data-card"><h4>Permanencia temporal por trabajo</h4><strong>22</strong><span>5,1%</span></div>
-        <div class="profile-data-card"><h4>Duplicado de C.I. en Consulado</h4><strong>20</strong><span>4,7%</span></div>
-        <div class="profile-data-card"><h4>Solicitud de refugio</h4><strong>17</strong><span>4,0%</span></div>
-        <div class="profile-data-card"><h4>Otros trámites en Consulado</h4><strong>13</strong><span>3,0%</span></div>
-        <div class="profile-data-card"><h4>Certificado de nacimiento en Bolivia</h4><strong>12</strong><span>2,8%</span></div>
-        <div class="profile-data-card"><h4>Condonación de multas</h4><strong>12</strong><span>2,8%</span></div>
-        <div class="profile-data-card"><h4>C.I. boliviano nacido en Bolivia</h4><strong>4</strong><span>0,9%</span></div>
-        <div class="profile-data-card"><h4>Certificado REJAP</h4><strong>1</strong><span>0,2%</span></div>
-        <div class="profile-data-card"><h4>Elaboración de memorial</h4><strong>1</strong><span>0,2%</span></div>
-        <div class="profile-data-card"><h4>Nota para Migraciones</h4><strong>1</strong><span>0,2%</span></div>
-        <div class="profile-data-card"><h4>Carnet de extranjería</h4><strong>1</strong><span>0,2%</span></div>
+      <div class="pie-chart-block" aria-label="Gráfico circular de Solicitudes y trámites jurídicos">
+        <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 66.4%, #f6a300 66.4% 75.7%, #ff3d12 75.7% 80.8%, #7a8791 80.8% 85.5%, #1097ad 85.5% 89.5%, #8b5cf6 89.5% 92.5%, #13a35b 92.5% 95.3%, #d946ef 95.3% 98.1%, #94a3b8 98.1% 100.0%);"></div>
+        <div class="pie-legend">
+          <div><span class="pie-color" style="background:#0b6b9a;"></span>Otros: 66,4%</div><div><span class="pie-color" style="background:#f6a300;"></span>Permanencia temp. familia: 9,3%</div><div><span class="pie-color" style="background:#ff3d12;"></span>Permanencia temp. trabajo: 5,1%</div><div><span class="pie-color" style="background:#7a8791;"></span>Duplicado C.I.: 4,7%</div><div><span class="pie-color" style="background:#1097ad;"></span>Solicitud refugio: 4,0%</div><div><span class="pie-color" style="background:#8b5cf6;"></span>Trámites consulado: 3,0%</div><div><span class="pie-color" style="background:#13a35b;"></span>Cert. nacimiento: 2,8%</div><div><span class="pie-color" style="background:#d946ef;"></span>Condonación multas: 2,8%</div><div><span class="pie-color" style="background:#94a3b8;"></span>Otros específicos: 1,9%</div>
+        </div>
       </div>
+
+      
       <p>La categoría “Otros” concentra el 66,4% de las solicitudes, por lo que se recomienda desagregarla en futuros sistemas de registro.</p>
     </div>
 
@@ -1151,14 +1169,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     <div class="stats-popup-section">
       <h3>Prioridades estratégicas para la intervención</h3>
-      <div class="profile-data-grid">
-        <div class="profile-data-card"><h4>Protección y regularización migratoria</h4><p>Fortalecer orientación, acompañamiento documental, derivación y seguimiento de casos de irregularidad, refugio y permanencia temporal.</p></div>
-        <div class="profile-data-card"><h4>Respuesta humanitaria y habitabilidad</h4><p>Priorizar alojamiento temporal seguro, alimentación, protección frente a la intemperie y rutas sostenibles de salida de la situación de calle.</p></div>
-        <div class="profile-data-card"><h4>Prevención y atención de violencias</h4><p>Reforzar identificación temprana, registro, derivación y acompañamiento de xenofobia, discriminación, robo, extorsión y otras violencias.</p></div>
-        <div class="profile-data-card"><h4>Medios de vida e integración</h4><p>Vincular la alta motivación laboral y económica con formación, empleabilidad, emprendimiento e inclusión financiera y laboral.</p></div>
-        <div class="profile-data-card"><h4>Salud y continuidad de cuidados</h4><p>Establecer rutas de acceso a atención primaria, medicamentos, salud preventiva y seguimiento de personas con enfermedades declaradas.</p></div>
-        <div class="profile-data-card"><h4>Protección familiar y vínculos transnacionales</h4><p>Incorporar acciones para familias separadas, cuidados transnacionales, remesas y reunificación familiar cuando corresponda.</p></div>
-      </div>
+      
     </div>
 
     <div class="stats-popup-section">

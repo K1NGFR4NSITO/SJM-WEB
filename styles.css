@@ -3796,3 +3796,115 @@ body.modal-open{
 }
 
 
+/* PERFIL MIGRATORIO - TARJETA EXTERNA */
+
+.profile-trigger{
+    text-decoration:none;
+    display:block;
+}
+
+.profile-cover{
+    margin-top:105px;
+    text-align:center;
+}
+
+.profile-main-number{
+    display:block;
+    font-size:88px;
+    font-weight:900;
+    line-height:0.95;
+    color:#fff;
+    letter-spacing:-3px;
+    margin-bottom:10px;
+}
+
+.profile-cover p{
+    color:#fff;
+    font-size:18px;
+    font-weight:600;
+    margin-bottom:22px;
+}
+
+.profile-summary-list{
+    display:grid;
+    gap:9px;
+    margin:22px 0 26px;
+}
+
+.profile-summary-list span{
+    display:block;
+    padding:9px 13px;
+    border-radius:12px;
+    background:rgba(255,255,255,0.16);
+    border:1px solid rgba(255,255,255,0.18);
+    color:#fff;
+    font-size:14px;
+    font-weight:800;
+    line-height:1.25;
+    text-align:left;
+}
+
+.profile-btn{
+    background:#fff !important;
+    color:#ff3d12 !important;
+}
+
+/* PERFIL MIGRATORIO - MODAL */
+
+.profile-popup-hero{
+    background:linear-gradient(135deg,#ff3d12,#d82b0a);
+}
+
+.profile-data-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:16px;
+}
+
+.profile-data-card{
+    background:#f7f9fb;
+    border-left:6px solid #ff3d12;
+    border-radius:18px;
+    padding:20px;
+}
+
+.profile-data-card h4{
+    color:#14364a;
+    font-size:17px;
+    margin-bottom:10px;
+}
+
+.profile-data-card strong{
+    display:block;
+    color:#ff3d12;
+    font-size:34px;
+    line-height:1;
+    margin-bottom:6px;
+}
+
+.profile-data-card span{
+    display:block;
+    color:#222;
+    font-size:15px;
+    font-weight:800;
+}
+
+.profile-data-card p{
+    font-size:14px !important;
+    line-height:1.45 !important;
+    margin-top:8px !important;
+}
+
+@media(max-width:768px){
+    .profile-cover{
+        margin-top:85px;
+    }
+
+    .profile-main-number{
+        font-size:60px;
+    }
+
+    .profile-data-grid{
+        grid-template-columns:1fr;
+    }
+}

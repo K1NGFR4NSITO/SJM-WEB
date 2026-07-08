@@ -1,5 +1,159 @@
 const publicaciones = [
 {
+    titulo: "Sin Fronteras - 7",
+    fecha: "18 marzo 2026",
+    anio: "2026",
+    categoria: "Sin Fronteras",
+    seccion: "sinfronteras",
+    resumen: "El Servicio Jesuita a Migrantes (SJM) presenta una nueva edición de su boletín institucional “Sin Fronteras”, donde te compartimos las principales actividades y reflexiones desarrolladas durante el primer trimestre de la gestión 2026.",
+    imagen: "img/notas/SF72026.png",
+    pdf: "pdf/SF72026.pdf"
+  },
+
+{
+    titulo: "Sin Fronteras - 5",
+    fecha: "5 noviembre 2025",
+    anio: "2025",
+    categoria: "Sin Fronteras",
+    seccion: "sinfronteras",
+    resumen: "Patricia Alcón, directora, y Anavel Guarachi, responsable del área social de la Fundación Privada de Fieles Servicio Jesuita a Migrantes (FPF SJM), participaron en el Encuentro del Sector Social de la Provincia Boliviana de la Compañía de Jesús, realizado en el municipio de Charagua, departamento de Santa Cruz.",
+    imagen: "img/notas/SF52025.png",
+    pdf: "pdf/SF52025.pdf"
+  },
+
+{
+    titulo: "Sin Fronteras - 4",
+    fecha: "29 agosto 2025",
+    anio: "2025",
+    categoria: "Sin Fronteras",
+    seccion: "sinfronteras",
+    resumen: "La casa de retiros El Paso, ubicada en el departamento de Cochabamba, fue el escenario donde el equipo de la Fundación Privada de Fieles Servicio Jesuita a Migrantes (FPF SJM) llevó a cabo su Retiro Espiritual anual. Esta actividad se desarrolló a lo largo de cuatro días y contó con el acompañamiento del sacerdote jesuita Jesús Jiménez.",
+    imagen: "img/notas/SF42025.png",
+    pdf: "pdf/SF42025.pdf"
+  },
+
+{
+    titulo: "Sin Fronteras - 3",
+    fecha: "9 julio 2025",
+    anio: "2025",
+    categoria: "Sin Fronteras",
+    seccion: "sinfronteras",
+    resumen: "Los estudiantes de la asignatura de “Diagnóstico de Necesidades Formativas Sociales” de la Universidad Católica Boliviana, junto a su docente, Lic. Magaly Marianac Durán, llevaron a cabo un taller de formación institucional para la Fundación Privada de Fieles Servicio Jesuita a Migrantes, FPF SJM, que abordó el tema “Trabajo en equipo y comunicación asertiva”.",
+    imagen: "img/notas/SF32025.png",
+    pdf: "pdf/SF32025.pdf"
+  },
+
+{
+    titulo: "Sin Fronteras - 2",
+    fecha: "19 abril 2025",
+    anio: "2025",
+    categoria: "Sin Fronteras",
+    seccion: "sinfronteras",
+    resumen: "En una sociedad cambiante y desafiante, el equipo de la Fundación Privada de Fieles Servicio Jesuita a Migrantes (FPF SJM) suma esfuerzos en pro de la comunidad migrante que con mucha fe en el Señor asumen el reto de dejar sus hogares y país de origen para buscar sendas que le permitan cambiar su calidad de vida con miras a un futuro satisfactorio.",
+    imagen: "img/notas/SF22025.png",
+    pdf: "pdf/SF22025.pdf"
+  },
+
+{
+    titulo: "Sin Fronteras - 1",
+    fecha: "7 febrero 2025",
+    anio: "2025",
+    categoria: "Sin Fronteras",
+    seccion: "sinfronteras",
+    resumen: "El apoyo a la comunidad migrante interna y externa es una labor imparable desde el Proyecto Migrantes de la Fundación Privada de Fieles Servicio Jesuita a Migrantes (FPF SJM).",
+    imagen: "img/notas/SF12025.png",
+    pdf: "pdf/SF12025.pdf"
+  },
+
+{
+    titulo: "Sin Fronteras - 30",
+    fecha: "7 diciembre 2024",
+    anio: "2024",
+    categoria: "Sin Fronteras",
+    seccion: "sinfronteras",
+    resumen: "El dinamismo es una de las características del trabajo que desarrolla la Fundación Privada de Fieles Servicio Jesuita a Migrantes de Bolivia, FPF SJM. Esta característica le permite interactuar eficientemente con todas aquellas personas que llegan a la oficina de la Fundación.",
+    imagen: "img/notas/SF302024.png",
+    pdf: "pdf/SF302024.pdf"
+  },
+
+{
+    titulo: "Sin Fronteras - 29",
+    fecha: "3 noviembre 2024",
+    anio: "2024",
+    categoria: "Sin Fronteras",
+    seccion: "sinfronteras",
+    resumen: "En los meses de septiembre y octubre la Fundación Privada de Fieles Servicio Jesuita a Migrantes (FPF SJM) generó espacios de aprendizaje, los que contribuyeron con herramientas útiles a las personas que fueron parte de talleres, encuentros y convivencias.",
+    imagen: "img/notas/SF292024.png",
+    pdf: "pdf/SF292024.pdf"
+  },
+
+{
+    titulo: "Sin Fronteras - 28",
+    fecha: "15 septiembre 2024",
+    anio: "2024",
+    categoria: "Sin Fronteras",
+    seccion: "sinfronteras",
+    resumen: "Los territorios que habitamos actualmente son enriquecidos por muchas personas que llegan de otros espacios sociales y culturales. En la Fundación PF SJM esta realidad es vista como una oportunidad para forjar lazos con características interculturales.",
+    imagen: "img/notas/SF282024.png",
+    pdf: "pdf/SF282024.pdf"
+  },
+
+{
+    titulo: "Sin Fronteras - 27",
+    fecha: "23 junio 2024",
+    anio: "2024",
+    categoria: "Sin Fronteras",
+    seccion: "sinfronteras",
+    resumen: "Hemos finalizado el primer semestre del 2024 y en él, la Fundación Servicio Jesuita a Migrantes trabajó a favor de personas migrantes, adolescentes y jóvenes.",
+    imagen: "img/notas/SF272024.png",
+    pdf: "pdf/SF272024.pdf"
+  },
+
+{
+    titulo: "Sin Fronteras - 26",
+    fecha: "18 marzo 2024",
+    anio: "2024",
+    categoria: "Sin Fronteras",
+    seccion: "sinfronteras",
+    resumen: "Uno de los principales objetivos de la Fundación Servicio Jesuita a Migrantes de Bolivia implica la disminución de la vulnerabilidad de los migrantes y de sus familias, al respecto, la primera foto de la portada (en la parte superior) muestra a dos familias venezolanas que residen en La Paz.",
+    imagen: "img/notas/SF262024.png",
+    pdf: "pdf/SF262024.pdf"
+  },
+
+{
+    titulo: "Sin Fronteras - 25",
+    fecha: "15 febrero 2024",
+    anio: "2024",
+    categoria: "Sin Fronteras",
+    seccion: "sinfronteras",
+    resumen: "La Fundación Privada de Fieles Servicio Jesuita a Migrantes (FSJM) inició la atención el 15 de enero de la gestión 2024.",
+    imagen: "img/notas/SF252024.png",
+    pdf: "pdf/SF252024.pdf"
+  },
+
+{
+    titulo: "Movilidad humana en Bolivia: desafíos para una gobernanza migratoria con enfoque de derechos e integración regional",
+    fecha: "6 julio 2026",
+    anio: "2026",
+    categoria: "Canto del Tordo",
+    seccion: "canto",
+    resumen: "La movilidad humana constituye uno de los procesos sociales más dinámicos y complejos del siglo XXI. Más allá del desplazamiento de personas entre territorios, representa un fenómeno estrechamente vinculado con el desarrollo económico, la protección de los derechos humanos, la integración regional y la capacidad de los Estados para responder a nuevas realidades sociales. ",
+    imagen: "img/notas/CDT72026.png",
+    pdf: "pdf/ElCantoDelTordo7.pdf"
+  },
+
+{
+    titulo: "Jóvenes fortalecen una cultura de convivencia e interculturalidad a través del análisis de la migración",
+    fecha: "7 julio 2026",
+    anio: "2026",
+    categoria: "Encuentros JRF",
+    seccion: "encuentros-jrf",
+    resumen: "Con el propósito de fortalecer la comprensión sobre la movilidad humana, la interculturalidad y el cuidado de la casa común, el Servicio Jesuita a Migrantes – Bolivia (SJM), mediante el programa Jóvenes Rompiendo Fronteras (JRF), desarrolló el taller Nuestras interacciones de cooperación, correspondiente al Nivel 2 del proceso formativo, con la participación de 86 estudiantes de sexto de secundaria de la Unidad Educativa Amor de Dios – Fe y Alegría, en la ciudad de El Alto. ",
+    imagen: "img/notas/EJRF42026.png",
+    pdf: "pdf/EncuentrosJRF4.pdf"
+  },
+
+{
     titulo: "Una mirada al Plan Suramericano de Migraciones hacia la Integración 2035",
     fecha: "17 junio 2026",
     anio: "2026",
@@ -27,7 +181,7 @@ const publicaciones = [
     anio: "2026",
     categoria: "Encuentros JRF",
     seccion: "encuentros-jrf",
-    resumen: "El Encuentro Intercultural “Tejiendo culturas, compartiendo saberes”, realizado el 28 de marzo e impulsado por el Servicio Jesuita a Migrantes (SJM), reunió a estudiantes de la Unidad Educativa San Vicente de Paúl del Nivel 3 y a personas migrantes, en una jornada de diálogo, integración y aprendizaje mutuo. Este espacio permitió fortalecer la convivencia intercultural, promoviendo el respeto, la hospitalidad y el reconocimiento de la diversidad cultural como una riqueza que une y enriquece a las juventudes.",
+    resumen: "El Encuentro Intercultural “Tejiendo culturas, compartiendo saberes”, realizado el 28 de marzo e impulsado por el Servicio Jesuita a Migrantes (SJM), reunió a estudiantes de la Unidad Educativa San Vicente de Paúl del Nivel 3 y a personas migrantes, en una jornada de diálogo, integración y aprendizaje mutuo.",
     imagen: "img/notas/EJRF22026.png",
     pdf: "pdf/EncuentrosJRF2.pdf"
   },
@@ -115,7 +269,7 @@ const publicaciones = [
     anio: "2026",
     categoria: "Encuentros JRF",
     seccion: "encuentros-jrf",
-    resumen: "En la ciudad de El Alto, donde confluyen múltiples historias y culturas, se desarrolló el 21 de marzo una experiencia que permitió visibilizar el valor profundo de la diversidad como base para la convivencia social. En un contexto donde la migración, tanto interna como externa, configura nuevas dinámicas sociales, el encuentro entre jóvenes estudiantes y personas migrantes se convirtió en un espacio de aprendizaje mutuo, diálogo intercultural y construcción de vínculos sociales.",
+    resumen: "En la ciudad de El Alto, donde confluyen múltiples historias y culturas, se desarrolló el 21 de marzo una experiencia que permitió visibilizar el valor profundo de la diversidad como base para la convivencia social.",
     imagen: "img/notas/EJRF12026.png",
     pdf: "pdf/EncuentrosJRF1.pdf"
   },

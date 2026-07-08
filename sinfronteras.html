@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIN FRONTERAS - SJM Bolivia</title>
+
+  <link rel="stylesheet" href="publicaciones.css">
+  <link rel="stylesheet" href="encuentrosjrf.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html" aria-label="Ir al inicio">
+        <img src="sjm.png" alt="SJM Bolivia">
+      </a>
+    </div>
+
+    <nav class="nav-menu" aria-label="Navegación principal">
+      <a href="index.html" class="nav-main-link">Inicio</a>
+
+      <div class="nav-dropdown has-dropdown">
+        <a href="quienes-somos.html" class="nav-main-link">Quiénes Somos</a>
+        <div class="nav-dropdown-menu">
+          <a href="quienes-somos.html#donde">Dónde estamos</a>
+          <a href="quienes-somos.html#mision">Misión</a>
+          <a href="quienes-somos.html#vision">Visión</a>
+          <a href="quienes-somos.html#objetivos">Objetivos Estratégicos</a>
+          <a href="quienes-somos.html#valores">Valores</a>
+          <a href="quienes-somos.html#principios">Principios</a>
+        </div>
+      </div>
+
+      <div class="nav-dropdown has-dropdown">
+        <a href="publicaciones.html" class="nav-main-link active">Publicaciones</a>
+        <div class="nav-dropdown-menu">
+<a href="sinfronteras.html">Sin Fronteras</a>
+<a href="canto.html">El Canto del Tordo</a>
+<a href="articulos.html">Notas informativas</a>
+<a href="encuentrosjrf.html">Encuentros JRF</a>
+<a href="historias.html">Historias de vida</a>
+<a href="guiadoc.html">Guía: Construyendo espacios interculturales</a>
+        </div>
+      </div>
+
+      <div class="nav-dropdown has-dropdown">
+        <a href="proyectos.html" class="nav-main-link">Proyectos</a>
+        <div class="nav-dropdown-menu">
+          <a href="proyectos.html#proyecto-migrantes">Proyecto Migrantes</a>
+          <a href="proyectos.html#proyecto-emprendimientos">Proyecto Emprendimientos</a>
+          <a href="proyectos.html#proyecto-jovenes">Proyecto Jóvenes e Interculturalidad</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="nav-pills">
+      <div class="pill-dropdown has-dropdown">
+        <button class="pill-btn pill-blue dropdown-toggle" type="button">
+          Orientación Migratoria <i class="fa-solid fa-caret-down"></i>
+        </button>
+
+        <div class="pill-dropdown-menu">
+          <a href="preguntas-frecuentes.html">Preguntas frecuentes</a>
+          <a href="guias.html">Guías</a>
+        </div>
+      </div>
+
+      <button class="menu-toggle" type="button" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+<!-- MENÚ MÓVIL REAL -->
+  <div class="mobile-menu-overlay"></div>
+
+  <aside class="mobile-menu" aria-label="Menú móvil">
+    <button class="mobile-menu-close" type="button" aria-label="Cerrar menú">&times;</button>
+
+    <nav class="mobile-nav-links">
+      <a href="index.html">Inicio</a>
+
+      <div class="mobile-nav-group">
+        <a href="quienes-somos.html">Quiénes Somos</a>
+        <div class="mobile-submenu">
+          <a href="quienes-somos.html#donde">Dónde estamos</a>
+          <a href="quienes-somos.html#mision">Misión</a>
+          <a href="quienes-somos.html#vision">Visión</a>
+          <a href="quienes-somos.html#objetivos">Objetivos Estratégicos</a>
+          <a href="quienes-somos.html#valores">Valores</a>
+          <a href="quienes-somos.html#principios">Principios</a>
+        </div>
+      </div>
+
+      <div class="mobile-nav-group">
+        <a href="publicaciones.html">Publicaciones</a>
+        <div class="mobile-submenu">
+<a href="sinfronteras.html">Sin Fronteras</a>
+<a href="canto.html">El Canto del Tordo</a>
+<a href="articulos.html">Notas informativas</a>
+<a href="encuentrosjrf.html">Encuentros JRF</a>
+<a href="historias.html">Historias de vida</a>
+<a href="guiadoc.html">Guía: Construyendo espacios interculturales</a>
+        </div>
+      </div>
+
+      <div class="mobile-nav-group">
+        <a href="proyectos.html">Proyectos</a>
+        <div class="mobile-submenu">
+          <a href="proyectos.html#proyecto-migrantes">Proyecto Migrantes</a>
+          <a href="proyectos.html#proyecto-emprendimientos">Proyecto Emprendimientos</a>
+          <a href="proyectos.html#proyecto-jovenes">Proyecto Jóvenes e Interculturalidad</a>
+        </div>
+      </div>
+
+      <a href="preguntas-frecuentes.html">Preguntas frecuentes</a>
+      <a href="guias.html">Guías</a>
+    </nav>
+  </aside>
+
+  <!-- HERO -->
+  <section class="categoria-hero canto-hero">
+    <div class="categoria-hero-content">
+      <div class="hero-line"></div>
+
+      <div>
+        <p class="categoria-mini">Publicaciones institucionales</p>
+        <h1>ENCUENTROS JRF</h1>
+        <p class="categoria-desc">
+          Archivo institucional de notas, reflexiones y publicaciones breves sobre movilidad humana,
+          hospitalidad, interculturalidad y acompañamiento a personas migrantes.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILTROS -->
+  <section class="publicaciones-toolbar">
+    <div class="toolbar-title">
+      <h2>Archivo de publicaciones</h2>
+      <p>Consulta las notas por gestión, categoría o palabra clave.</p>
+    </div>
+
+    <div class="toolbar-controls">
+      <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="searchInput" placeholder="Buscar publicación...">
+      </div>
+
+      <select id="yearFilter">
+        <option value="todos">Todas las gestiones</option>
+        <option value="2026">2026</option>
+        <option value="2025">2025</option>
+        <option value="2024">2024</option>
+      </select>
+
+      
+    </div>
+  </section>
+
+  <!-- DESTACADA + SECUNDARIAS -->
+  <main class="periodico-layout">
+    <section class="nota-principal" id="notaPrincipal"></section>
+
+    <aside class="notas-secundarias">
+      <div class="side-header">
+        <h2>Publicaciones recientes</h2>
+      </div>
+
+      <div id="notasSecundarias"></div>
+    </aside>
+  </main>
+
+  <!-- ARCHIVO GENERAL -->
+  <section class="archivo-notas">
+    <div class="archivo-header">
+      <div>
+        <h2>Todas las notas</h2>
+        <p id="resultCounter">Publicaciones disponibles</p>
+      </div>
+
+      <button class="reset-filters" id="resetFilters" type="button">
+        Limpiar filtros
+      </button>
+    </div>
+
+    <div class="archivo-grid" id="archivoGrid"></div>
+
+    <div class="empty-state" id="emptyState">
+      <i class="fa-regular fa-folder-open"></i>
+      <h3>No se encontraron publicaciones</h3>
+      <p>Prueba cambiando el año, la categoría o la palabra clave.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer compact-footer">
+    <div class="footer-stripe">
+      <span class="stripe-blue"></span>
+      <span class="stripe-orange"></span>
+      <span class="stripe-red"></span>
+    </div>
+
+    <div class="footer-main footer-main-compact">
+      <div class="footer-brand compact-brand">
+        <div class="footer-logo-box">
+          <img src="sjm.png" alt="SJM Bolivia">
+        </div>
+
+        <div class="footer-brand-text">
+          <p>
+            El Servicio Jesuita a Migrantes en Bolivia acompaña, orienta y promueve
+            la dignidad de las personas migrantes mediante acciones de acogida,
+            protección e integración.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-contact compact-contact">
+        <h3>Contacto</h3>
+        <a href="mailto:comunicacion.sjmbolivia@gmail.com">comunicacion.sjmbolivia@gmail.com</a>
+
+        <div class="footer-social">
+
+    <a href="https://www.facebook.com/sjmbolivia.bolivia?locale=es_LA"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Facebook">
+        <i class="fa-brands fa-facebook-f"></i>
+    </a>
+
+    <a href="https://www.tiktok.com/@serviciojesuitamigrantes"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="TikTok">
+        <i class="fa-brands fa-tiktok"></i>
+    </a>
+
+    <a href="https://www.youtube.com/@serviciojesuitaamigrantesb4786"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="YouTube">
+        <i class="fa-brands fa-youtube"></i>
+    </a>
+
+    <a href="https://www.instagram.com/sjm_bolivia"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+
+</div>
+      </div>
+    </div>
+
+    <div class="footer-bottom compact-bottom">
+      <p>© Servicio Jesuita a Migrantes Bolivia</p>
+      <div class="footer-bottom-links">
+        <!--<a href="#">Política de privacidad</a>-->
+      </div>
+    </div>
+  </footer>
+
+  <!-- VISOR PDF -->
+  <div class="pdf-viewer-modal" id="pdfViewerModal" aria-hidden="true">
+    <div class="pdf-viewer-header">
+      <h3 id="pdfViewerTitle">Publicación</h3>
+
+      <div class="pdf-viewer-actions">
+        <a id="pdfDownloadBtn" href="#" target="_blank">
+          Abrir PDF <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+
+        <button type="button" id="pdfCloseBtn" aria-label="Cerrar visor PDF">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+    </div>
+
+    <iframe id="pdfFrame" src="" title="Visor PDF"></iframe>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+const SECCION_ACTUAL = "sinfronteras";
+</script>
+<script src="publicaciones-data.js"></script>
+<script src="publicaciones-render.js"></script>
+
+</body>
+</html>

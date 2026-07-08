@@ -762,42 +762,60 @@ document.addEventListener("DOMContentLoaded", () => {
     </div>
 
     <div class="stats-popup-section">
-      <h3>Contexto territorial y migratorio</h3>
-      <p>El Alto se ha consolidado como territorio receptor de migración interna e internacional. Su proximidad a la frontera con Perú y su función como puerta de ingreso al eje troncal convierten a la ciudad en un espacio estratégico de tránsito y destino, especialmente para población venezolana y colombiana.</p>
-      <p>En un escenario de alta informalidad laboral, restricciones económicas y mecanismos temporales de regularización, Bolivia cumple simultáneamente funciones de tránsito, retorno y destino. La integración social, laboral, documental y habitacional continúa siendo frágil. En este contexto, el SJM desarrolla acciones de atención, acompañamiento y protección, con énfasis en población en situación migratoria irregular, pobreza extrema y alta vulnerabilidad social.</p>
-    </div>
-
-    <div class="stats-popup-section">
-      <h3>Síntesis ejecutiva</h3>
-      <p>La población atendida presenta un perfil predominantemente masculino, joven y de origen venezolano. El 63,8% son hombres; las edades de 20 a 35 años concentran el 65,6% de los casos con edad registrada; Venezuela representa el 70,7% de las procedencias. La movilidad está marcada por razones laborales y económicas (81,8%) y por el tránsito hacia otro país (83,7%).</p>
-      <p>La irregularidad migratoria constituye un factor estructural de vulnerabilidad: 1.297 personas (95,1%) reportaron ingreso irregular. Además, 957 personas (70,2%) estaban en situación de calle y 717 (52,6%) reportaron alguna forma de violencia por parte de la población durante el viaje.</p>
-      <p>Durante el viaje, 918 personas (67,3%) recibieron ayuda de alguna institución; en Bolivia, 740 (54,3%) reportaron apoyo institucional. En el ámbito jurídico se registraron 428 atenciones legales y 333 seguimientos, con predominio de la orientación legal.</p>
-    </div>
-
-    <div class="stats-popup-section">
       <h3>Caracterización sociodemográfica</h3>
 
       <h4>Género</h4>
-      <div class="pie-chart-block" aria-label="Gráfico circular de Género">
-        <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 63.8%, #f6a300 63.8% 97.5%, #ff3d12 97.5% 100.0%);"></div>
-        <div class="pie-legend">
-          <div><span class="pie-color" style="background:#0b6b9a;"></span>Masculino: 63,8%</div><div><span class="pie-color" style="background:#f6a300;"></span>Femenino: 33,7%</div><div><span class="pie-color" style="background:#ff3d12;"></span>LGBT: 2,5%</div>
-        </div>
-      </div>
 
-      
-      <p>La composición evidencia una marcada mayoría masculina. La presencia de mujeres y población LGBT exige respuestas diferenciadas de protección frente a violencia, discriminación y acceso desigual a derechos.</p>
+<div class="pie-chart-block" aria-label="Gráfico circular de Género">
+
+  <div class="pie-chart"
+    style="background:conic-gradient(
+      #0b6b9a 0% 63.8%,
+      #f6a300 63.8% 97.5%,
+      #ff3d12 97.5% 100%
+    );">
+  </div>
+
+  <div class="pie-legend">
+    <div>
+      <span class="pie-color" style="background:#0b6b9a;"></span>
+      Masculino: 63,8%
+    </div>
+
+    <div>
+      <span class="pie-color" style="background:#f6a300;"></span>
+      Femenino: 33,7%
+    </div>
+
+    <div>
+      <span class="pie-color" style="background:#ff3d12;"></span>
+      LGBT: 2,5%
+    </div>
+  </div>
+
+  <p>
+    La composición por género evidencia una marcada mayoría masculina:
+    870 hombres (63,8 %), frente a 460 mujeres (33,7 %) y 34 personas
+    LGBT (2,5 %). Este patrón sugiere que la movilidad atendida conserva
+    un componente predominantemente masculino, aunque la presencia de
+    mujeres y población LGBT exige respuestas diferenciadas de protección,
+    especialmente frente a riesgos de violencia, discriminación y acceso
+    desigual a servicios.
+  </p>
+
+</div>
+
 
       <h4>Estructura por edad</h4>
       <div class="pie-chart-block" aria-label="Gráfico circular de Estructura por edad">
         <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 7.7%, #f6a300 7.7% 33.2%, #ff3d12 33.2% 56.6%, #7a8791 56.6% 73.3%, #1097ad 73.3% 84.6%, #8b5cf6 84.6% 95.9%, #13a35b 95.9% 99.1%, #d946ef 99.1% 99.8%);"></div>
         <div class="pie-legend">
-          <div><span class="pie-color" style="background:#0b6b9a;"></span>17–19 años: 7,7%</div><div><span class="pie-color" style="background:#f6a300;"></span>20–25: 25,5%</div><div><span class="pie-color" style="background:#ff3d12;"></span>26–30: 23,4%</div><div><span class="pie-color" style="background:#7a8791;"></span>31–35: 16,7%</div><div><span class="pie-color" style="background:#1097ad;"></span>36–40: 11,3%</div><div><span class="pie-color" style="background:#8b5cf6;"></span>41–50: 11,3%</div><div><span class="pie-color" style="background:#13a35b;"></span>51–60: 3,2%</div><div><span class="pie-color" style="background:#d946ef;"></span>60+: 0,7%</div>
+          <div><span class="pie-color" style="background:#0b6b9a;"></span>17–19: 7,7%</div><div><span class="pie-color" style="background:#f6a300;"></span>20–25: 25,5%</div><div><span class="pie-color" style="background:#ff3d12;"></span>26–30: 23,4%</div><div><span class="pie-color" style="background:#7a8791;"></span>31–35: 16,7%</div><div><span class="pie-color" style="background:#1097ad;"></span>36–40: 11,3%</div><div><span class="pie-color" style="background:#8b5cf6;"></span>41–50: 11,3%</div><div><span class="pie-color" style="background:#13a35b;"></span>51–60: 3,2%</div><div><span class="pie-color" style="background:#d946ef;"></span>60+: 0,7%</div>
         </div>
+
+      <p>La estructura etaria se concentra en edades jóvenes y económicamente activas. Los grupos de 20 a 25 años (25,5 %), 26 a 30 años (23,4 %) y 31 a 35 años (16,7 %) reúnen el 65,6 % de los 1.357 casos con edad registrada. Esto muestra una migración esencialmente laboral y de búsqueda de oportunidades, pero también una alta presión sobre empleo, ingresos, vivienda y regularización documental.</p>
       </div>
 
-      
-      <p>Total con edad registrada: 1.357. Los grupos de 20 a 35 años reúnen el 65,6%, mostrando una migración esencialmente joven y económicamente activa, con presión sobre empleo, ingresos, vivienda y regularización documental.</p>
 
       <h4>País de procedencia</h4>
       <div class="pie-chart-block" aria-label="Gráfico circular de País de procedencia">
@@ -805,10 +823,10 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="pie-legend">
           <div><span class="pie-color" style="background:#0b6b9a;"></span>Venezuela: 70,7%</div><div><span class="pie-color" style="background:#f6a300;"></span>Colombia: 21,9%</div><div><span class="pie-color" style="background:#ff3d12;"></span>Ecuador: 2,9%</div><div><span class="pie-color" style="background:#7a8791;"></span>Argentina: 1,8%</div><div><span class="pie-color" style="background:#1097ad;"></span>Perú: 1,2%</div><div><span class="pie-color" style="background:#8b5cf6;"></span>Otros: 1,4%</div>
         </div>
+
+      <p>La procedencia está fuertemente concentrada: Venezuela aporta 965 personas (70,7 %) y Colombia 299 (21,9 %); juntas representan el 92,6 % del total. El perfil institucional responde, por tanto, principalmente a dinámicas de movilidad sudamericana asociadas a crisis económicas, políticas y de protección, sin dejar de registrar flujos menores desde Ecuador, Argentina, Perú y otros países.</p>
       </div>
 
-      
-      <p>Venezuela y Colombia representan conjuntamente el 92,6% del total, confirmando una fuerte concentración de movilidad sudamericana.</p>
 
       <h4>Nivel educativo</h4>
       <div class="pie-chart-block" aria-label="Gráfico circular de Nivel educativo">
@@ -816,21 +834,10 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="pie-legend">
           <div><span class="pie-color" style="background:#0b6b9a;"></span>Primaria: 18,3%</div><div><span class="pie-color" style="background:#f6a300;"></span>Secundaria: 37,8%</div><div><span class="pie-color" style="background:#ff3d12;"></span>Bachillerato: 31,4%</div><div><span class="pie-color" style="background:#7a8791;"></span>Técnico: 8,2%</div><div><span class="pie-color" style="background:#1097ad;"></span>Titulado: 4,3%</div>
         </div>
+
+      <p>El nivel educativo muestra una base importante de capacidades: 516 personas tienen secundaria (37,8 %) y 428 bachillerato (31,4 %). A ello se suman 112 con formación técnica (8,2 %) y 59 tituladas (4,3 %). Este capital educativo puede favorecer estrategias de inserción laboral y emprendimiento, aunque la irregularidad migratoria y la precariedad habitacional limitan la conversión efectiva de estas capacidades en medios de vida sostenibles.</p>
       </div>
 
-      
-      <p>Existe una base importante de capacidades educativas que puede favorecer inserción laboral y emprendimiento, aunque la irregularidad migratoria y la precariedad habitacional limitan su aprovechamiento.</p>
-
-      <h4>Autoidentificación indígena</h4>
-      <div class="pie-chart-block" aria-label="Gráfico circular de Autoidentificación indígena">
-        <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 66.4%, #f6a300 66.4% 87.1%, #ff3d12 87.1% 100.0%);"></div>
-        <div class="pie-legend">
-          <div><span class="pie-color" style="background:#0b6b9a;"></span>No: 66,4%</div><div><span class="pie-color" style="background:#f6a300;"></span>Sí: 20,7%</div><div><span class="pie-color" style="background:#ff3d12;"></span>No responde: 12,9%</div>
-        </div>
-      </div>
-
-      
-      <p>La proporción de autoidentificación indígena es relevante para incorporar pertinencia cultural, enfoque intercultural y atención a posibles barreras lingüísticas o de discriminación.</p>
     </div>
 
     <div class="stats-popup-section">
@@ -842,9 +849,9 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="pie-legend">
           <div><span class="pie-color" style="background:#0b6b9a;"></span>Unión libre: 45,0%</div><div><span class="pie-color" style="background:#f6a300;"></span>Soltera/o: 36,2%</div><div><span class="pie-color" style="background:#ff3d12;"></span>Separada/o: 12,3%</div><div><span class="pie-color" style="background:#7a8791;"></span>Casada/o: 5,6%</div><div><span class="pie-color" style="background:#1097ad;"></span>Viuda/o: 0,8%</div>
         </div>
-      </div>
 
-      
+      <p>En el país de origen predominaban la unión libre (45,0 %) y la soltería (36,2 %). La presencia de personas separadas (12,3 %) también es relevante. La estructura refleja vínculos familiares diversos y obliga a comprender la migración no solo como decisión individual, sino como estrategia familiar que puede implicar separación, reorganización de cuidados y obligaciones económicas transnacionales.</p>
+      </div>
 
       <h4>Número de hijas e hijos</h4>
       <div class="pie-chart-block" aria-label="Gráfico circular de Número de hijas e hijos">
@@ -852,21 +859,21 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="pie-legend">
           <div><span class="pie-color" style="background:#0b6b9a;"></span>0: 26,3%</div><div><span class="pie-color" style="background:#f6a300;"></span>1: 26,9%</div><div><span class="pie-color" style="background:#ff3d12;"></span>2: 20,2%</div><div><span class="pie-color" style="background:#7a8791;"></span>3: 13,8%</div><div><span class="pie-color" style="background:#1097ad;"></span>4: 8,1%</div><div><span class="pie-color" style="background:#8b5cf6;"></span>5 o más: 4,8%</div>
         </div>
+
+      <p>El 73,7 % de las personas tiene al menos una hija o hijo. Los hogares con uno o dos hijos concentran 642 casos, mientras 363 personas reportan tres o más. Esta composición incrementa las necesidades de protección familiar, alimentación, alojamiento, educación y generación de ingresos, especialmente cuando la movilidad ocurre en condiciones de tránsito o calle.</p>
       </div>
 
-      
-      <p>El 73,7% tiene al menos una hija o hijo. Los hogares con uno o dos hijos concentran 642 casos y 363 personas reportan tres o más.</p>
 
-      <h4>Cuidado de hijas e hijos que permanecieron en origen</h4>
-      <div class="pie-chart-block" aria-label="Gráfico circular de Cuidado de hijas e hijos que permanecieron en origen">
+      <h4>Cuidado de hijas e hijos en origen</h4>
+      <div class="pie-chart-block" aria-label="Gráfico circular de Cuidado de hijas e hijos en origen">
         <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 41.5%, #f6a300 41.5% 78.4%, #ff3d12 78.4% 88.6%, #7a8791 88.6% 93.5%, #1097ad 93.5% 97.2%, #8b5cf6 97.2% 100.0%, #13a35b 100.0% 100.0%);"></div>
         <div class="pie-legend">
           <div><span class="pie-color" style="background:#0b6b9a;"></span>Nadie: 41,5%</div><div><span class="pie-color" style="background:#f6a300;"></span>Su madre: 36,9%</div><div><span class="pie-color" style="background:#ff3d12;"></span>Abuelo materno: 10,2%</div><div><span class="pie-color" style="background:#7a8791;"></span>Abuelo paterno: 4,9%</div><div><span class="pie-color" style="background:#1097ad;"></span>Su padre: 3,7%</div><div><span class="pie-color" style="background:#8b5cf6;"></span>Otro familiar: 2,8%</div><div><span class="pie-color" style="background:#13a35b;"></span>Amigos: 0,0%</div>
         </div>
+
+      <p>Entre los 1.005 casos considerados, 417 indican que sus hijos no quedaron a cargo de otra persona, mientras 371 (36,9 %) señalan a la madre como principal cuidadora. El peso muy reducido del padre como cuidador (3,7 %) revela una distribución desigual de las responsabilidades de cuidado y confirma la relevancia de las redes femeninas y de los abuelos en la sostenibilidad de los proyectos migratorios.</p>
       </div>
 
-      
-      <p>Base: 1.005 casos. El reducido peso del padre como cuidador muestra una distribución desigual del cuidado y la importancia de las redes femeninas y de abuelos.</p>
 
       <h4>Envío de apoyo económico</h4>
       <div class="pie-chart-block" aria-label="Gráfico circular de Envío de apoyo económico">
@@ -874,10 +881,10 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="pie-legend">
           <div><span class="pie-color" style="background:#0b6b9a;"></span>Sí: 37,6%</div><div><span class="pie-color" style="background:#f6a300;"></span>No: 62,4%</div>
         </div>
+
+      <p>Solo 378 de 1.005 personas (37,6 %) envían apoyo económico, frente a 627 (62,4 %) que no lo hacen. Esta relación puede interpretarse como un indicador de inserción económica precaria: aun existiendo responsabilidades familiares, una mayoría no logra generar excedentes suficientes para sostener remesas o transferencias regulares.</p>
       </div>
 
-      
-      <p>Base: 1.005 casos. La mayoría no logra generar excedentes suficientes para sostener remesas o transferencias regulares.</p>
 
       <h4>Estado civil actual</h4>
       <div class="pie-chart-block" aria-label="Gráfico circular de Estado civil actual">
@@ -885,9 +892,9 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="pie-legend">
           <div><span class="pie-color" style="background:#0b6b9a;"></span>Unión libre: 49,4%</div><div><span class="pie-color" style="background:#f6a300;"></span>Soltera/o: 38,6%</div><div><span class="pie-color" style="background:#ff3d12;"></span>Separada/o: 7,4%</div><div><span class="pie-color" style="background:#7a8791;"></span>Casada/o: 4,0%</div><div><span class="pie-color" style="background:#1097ad;"></span>Viuda/o: 0,5%</div>
         </div>
-      </div>
 
-      
+      <p>La situación civil actual mantiene el predominio de la unión libre (49,4 %) y la soltería (38,6 %). Respecto de la situación declarada en origen, disminuyen los matrimonios y las separaciones, mientras aumenta la unión libre, lo que puede reflejar reconfiguraciones familiares durante la trayectoria migratoria.</p>
+      </div>
 
       <h4>Tipología familiar</h4>
       <div class="pie-chart-block" aria-label="Gráfico circular de Tipología familiar">
@@ -895,10 +902,10 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="pie-legend">
           <div><span class="pie-color" style="background:#0b6b9a;"></span>Reconstruida o simultánea: 41,0%</div><div><span class="pie-color" style="background:#f6a300;"></span>Nuclear: 29,0%</div><div><span class="pie-color" style="background:#ff3d12;"></span>Monoparental: 21,4%</div><div><span class="pie-color" style="background:#7a8791;"></span>Extensa o ampliada: 8,6%</div>
         </div>
+
+      <p>La familia reconstruida o simultánea es la tipología más frecuente, con 559 casos (41,0 %), seguida de la familia nuclear (29,0 %) y monoparental (21,4 %). La elevada proporción de estructuras reconstruidas muestra procesos de recomposición de vínculos y convivencia propios de trayectorias migratorias prolongadas, con implicaciones para cuidado, dependencia económica y protección de niñas, niños y adolescentes.</p>
       </div>
 
-      
-      <p>La elevada proporción de familias reconstruidas muestra procesos de recomposición de vínculos y convivencia propios de trayectorias migratorias prolongadas.</p>
     </div>
 
     <div class="stats-popup-section">
@@ -908,12 +915,12 @@ document.addEventListener("DOMContentLoaded", () => {
       <div class="pie-chart-block" aria-label="Gráfico circular de Causas de migración">
         <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 81.8%, #f6a300 81.8% 95.9%, #ff3d12 95.9% 97.4%, #7a8791 97.4% 98.8%, #1097ad 98.8% 99.2%, #8b5cf6 99.2% 99.6%, #13a35b 99.6% 99.8%, #d946ef 99.8% 99.9%, #94a3b8 99.9% 100.0%);"></div>
         <div class="pie-legend">
-          <div><span class="pie-color" style="background:#0b6b9a;"></span>Laboral / económica: 81,8%</div><div><span class="pie-color" style="background:#f6a300;"></span>Conflictos armados: 14,1%</div><div><span class="pie-color" style="background:#ff3d12;"></span>Violencia: 1,5%</div><div><span class="pie-color" style="background:#7a8791;"></span>Crisis política: 1,4%</div><div><span class="pie-color" style="background:#1097ad;"></span>Ecológica: 0,4%</div><div><span class="pie-color" style="background:#8b5cf6;"></span>Opinión política: 0,4%</div><div><span class="pie-color" style="background:#13a35b;"></span>Conflictos internos: 0,2%</div><div><span class="pie-color" style="background:#d946ef;"></span>Religión: 0,1%</div><div><span class="pie-color" style="background:#94a3b8;"></span>Violación masiva de DDHH: 0,1%</div>
+          <div><span class="pie-color" style="background:#0b6b9a;"></span>Laboral/económica: 81,8%</div><div><span class="pie-color" style="background:#f6a300;"></span>Conflictos armados: 14,1%</div><div><span class="pie-color" style="background:#ff3d12;"></span>Violencia: 1,5%</div><div><span class="pie-color" style="background:#7a8791;"></span>Crisis política: 1,4%</div><div><span class="pie-color" style="background:#1097ad;"></span>Ecológica: 0,4%</div><div><span class="pie-color" style="background:#8b5cf6;"></span>Opinión política: 0,4%</div><div><span class="pie-color" style="background:#13a35b;"></span>Conflictos internos: 0,2%</div><div><span class="pie-color" style="background:#d946ef;"></span>Religión: 0,1%</div><div><span class="pie-color" style="background:#94a3b8;"></span>Violación DDHH: 0,1%</div>
         </div>
+
+      <p>La causa laboral y económica concentra 1.116 casos (81,8 %), seguida por los conflictos armados con 192 (14,1 %). Aunque el componente económico es dominante, la presencia de violencia, crisis política, conflictos internos y otras causas muestra que las motivaciones pueden combinar necesidad económica y factores de protección, por lo que la lectura institucional debe evitar una separación rígida entre migración económica y migración forzada.</p>
       </div>
 
-      
-      <p>Las motivaciones combinan necesidad económica y factores de protección; por ello, debe evitarse una separación rígida entre migración económica y migración forzada.</p>
 
       <h4>Tipo de ingreso</h4>
       <div class="pie-chart-block" aria-label="Gráfico circular de Tipo de ingreso">
@@ -921,31 +928,31 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="pie-legend">
           <div><span class="pie-color" style="background:#0b6b9a;"></span>Irregular: 95,1%</div><div><span class="pie-color" style="background:#f6a300;"></span>Regular: 4,9%</div>
         </div>
+
+      <p>El ingreso irregular alcanza 1.297 personas (95,1 %), frente a solo 67 ingresos regulares (4,9 %). Esta es una de las características más críticas del perfil, pues condiciona el acceso a derechos, empleo formal, vivienda, salud y trámites administrativos, además de aumentar la exposición a controles, sanciones y explotación.</p>
       </div>
 
-      
-
-      <h4>Documentación declarada entre personas con ingreso irregular</h4>
-      <div class="pie-chart-block" aria-label="Gráfico circular de Documentación declarada entre personas con ingreso irregular">
+      <h4>Documentación declarada en ingreso irregular</h4>
+      <div class="pie-chart-block" aria-label="Gráfico circular de Documentación declarada en ingreso irregular">
         <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 66.9%, #f6a300 66.9% 89.6%, #ff3d12 89.6% 96.5%, #7a8791 96.5% 98.6%, #1097ad 98.6% 100.0%);"></div>
         <div class="pie-legend">
           <div><span class="pie-color" style="background:#0b6b9a;"></span>C.I.: 66,9%</div><div><span class="pie-color" style="background:#f6a300;"></span>Ningún documento: 22,7%</div><div><span class="pie-color" style="background:#ff3d12;"></span>Carta de denuncia: 6,9%</div><div><span class="pie-color" style="background:#7a8791;"></span>Residencia de otro país: 2,1%</div><div><span class="pie-color" style="background:#1097ad;"></span>Pasaporte: 1,4%</div>
         </div>
+
+      <p>Entre las 1.297 personas con ingreso irregular, 868 (66,9 %) contaban con cédula de identidad, 295 (22,7 %) no tenían ningún documento y el resto presentaba pasaporte, carta de denuncia o residencia de otro país. La irregularidad, por tanto, no equivale necesariamente a ausencia de identidad documental, pero el grupo sin documentación requiere atención prioritaria.</p>
       </div>
 
-      
-      <p>Base: 1.297 personas. La irregularidad no equivale necesariamente a ausencia de identidad documental, aunque 295 personas sin documentación requieren atención prioritaria.</p>
 
       <h4>Motivo y proyecto migratorio</h4>
       <div class="pie-chart-block" aria-label="Gráfico circular de Motivo y proyecto migratorio">
-        <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 83.7%, #f6a300 83.7% 93.1%, #ff3d12 93.1% 99.7%, #7a8791 99.7% 100.0%, #1097ad 100.0% 100.0%, #8b5cf6 100.1% 100.0%, #13a35b 100.1% 100.0%, #d946ef 100.1% 100.0%);"></div>
+        <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 83.7%, #f6a300 83.7% 93.1%, #ff3d12 93.1% 99.7%, #7a8791 99.7% 100.0%, #1097ad 100.0% 100.0%, #8b5cf6 100.0% 100.0%, #13a35b 100.0% 100.0%, #d946ef 100.0% 100.0%);"></div>
         <div class="pie-legend">
           <div><span class="pie-color" style="background:#0b6b9a;"></span>Tránsito a otro país: 83,7%</div><div><span class="pie-color" style="background:#f6a300;"></span>Permanencia: 9,4%</div><div><span class="pie-color" style="background:#ff3d12;"></span>Retorno a su país: 6,6%</div><div><span class="pie-color" style="background:#7a8791;"></span>Reunificación familiar: 0,3%</div><div><span class="pie-color" style="background:#1097ad;"></span>Trabajo: 0,1%</div><div><span class="pie-color" style="background:#8b5cf6;"></span>Salud: 0,0%</div><div><span class="pie-color" style="background:#13a35b;"></span>Estudios: 0,0%</div><div><span class="pie-color" style="background:#d946ef;"></span>Mayor seguridad: 0,0%</div>
         </div>
+
+      <p>El tránsito hacia otro país constituye el proyecto migratorio dominante: 1.141 personas (83,7 %). La permanencia en Bolivia representa 128 casos (9,4 %) y el retorno al país de origen 90 (6,6 %). Bolivia y, particularmente, El Alto aparecen así como nodos de tránsito, aunque una fracción de la población modifica su proyecto y permanece, lo que exige combinar asistencia de emergencia con políticas de integración.</p>
       </div>
 
-      
-      <p>Bolivia y particularmente El Alto funcionan como nodos de tránsito, aunque una fracción modifica su proyecto y permanece, exigiendo combinar asistencia de emergencia con integración.</p>
     </div>
 
     <div class="stats-popup-section">
@@ -957,10 +964,10 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="pie-legend">
           <div><span class="pie-color" style="background:#0b6b9a;"></span>Ninguna: 47,4%</div><div><span class="pie-color" style="background:#f6a300;"></span>Xenofobia: 15,8%</div><div><span class="pie-color" style="background:#ff3d12;"></span>Discriminación: 15,5%</div><div><span class="pie-color" style="background:#7a8791;"></span>Robo: 14,1%</div><div><span class="pie-color" style="background:#1097ad;"></span>Extorsión: 3,7%</div><div><span class="pie-color" style="background:#8b5cf6;"></span>Física: 1,8%</div><div><span class="pie-color" style="background:#13a35b;"></span>Verbal: 1,0%</div><div><span class="pie-color" style="background:#d946ef;"></span>Secuestro: 0,5%</div><div><span class="pie-color" style="background:#94a3b8;"></span>Sexual: 0,2%</div><div><span class="pie-color" style="background:#111827;"></span>Económica: 0,1%</div>
         </div>
+
+      <p>Durante el viaje, 647 personas (47,4 %) no reportaron violencia por parte de la población, lo que implica que 717 (52,6 %) sí registraron alguna forma. Destacan xenofobia (15,8 %), discriminación (15,5 %) y robo (14,1 %). La ruta migratoria aparece como un espacio de exposición acumulativa a riesgos sociales, patrimoniales y físicos.</p>
       </div>
 
-      
-      <p>717 personas (52,6%) reportaron alguna forma de violencia por parte de la población durante el viaje.</p>
 
       <h4>Violencia durante el viaje por parte de la familia</h4>
       <div class="pie-chart-block" aria-label="Gráfico circular de Violencia durante el viaje por parte de la familia">
@@ -968,9 +975,9 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="pie-legend">
           <div><span class="pie-color" style="background:#0b6b9a;"></span>Ninguna: 98,2%</div><div><span class="pie-color" style="background:#f6a300;"></span>Verbal: 0,4%</div><div><span class="pie-color" style="background:#ff3d12;"></span>Física: 0,4%</div><div><span class="pie-color" style="background:#7a8791;"></span>Robo: 0,4%</div><div><span class="pie-color" style="background:#1097ad;"></span>Xenofobia: 0,2%</div><div><span class="pie-color" style="background:#8b5cf6;"></span>Sexual: 0,1%</div><div><span class="pie-color" style="background:#13a35b;"></span>Discriminación: 0,1%</div><div><span class="pie-color" style="background:#d946ef;"></span>Secuestro: 0,1%</div><div><span class="pie-color" style="background:#94a3b8;"></span>Económica: 0,1%</div><div><span class="pie-color" style="background:#111827;"></span>Extorsión: 0,0%</div>
         </div>
-      </div>
 
-      
+      <p>La violencia ejercida por familiares durante el viaje es poco frecuente en el registro: 1.339 personas (98,2 %) no reportaron hechos. Sin embargo, los casos de violencia verbal, física, sexual, robo y secuestro, aunque numéricamente reducidos, requieren abordaje individual especializado y mecanismos confidenciales de detección y derivación.</p>
+      </div>
 
       <h4>Violencia en Bolivia por parte de la población</h4>
       <div class="pie-chart-block" aria-label="Gráfico circular de Violencia en Bolivia por parte de la población">
@@ -978,10 +985,10 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="pie-legend">
           <div><span class="pie-color" style="background:#0b6b9a;"></span>Ninguna: 84,0%</div><div><span class="pie-color" style="background:#f6a300;"></span>Discriminación: 7,4%</div><div><span class="pie-color" style="background:#ff3d12;"></span>Robo: 2,8%</div><div><span class="pie-color" style="background:#7a8791;"></span>Extorsión: 2,3%</div><div><span class="pie-color" style="background:#1097ad;"></span>Xenofobia: 1,8%</div><div><span class="pie-color" style="background:#8b5cf6;"></span>Verbal: 1,0%</div><div><span class="pie-color" style="background:#13a35b;"></span>Física: 0,6%</div><div><span class="pie-color" style="background:#d946ef;"></span>Secuestro: 0,1%</div><div><span class="pie-color" style="background:#94a3b8;"></span>Sexual: 0,0%</div><div><span class="pie-color" style="background:#111827;"></span>Económica: 0,0%</div>
         </div>
+
+      <p>En Bolivia, 1.146 personas (84,0 %) no reportaron violencia por parte de la población, mientras 218 (16,0 %) sí señalaron algún hecho. La discriminación es la categoría más frecuente (7,4 %), seguida del robo (2,8 %), la extorsión (2,3 %) y la xenofobia (1,8 %). La reducción respecto de la ruta no elimina la necesidad de fortalecer convivencia, acceso a denuncia y protección.</p>
       </div>
 
-      
-      <p>218 personas (16,0%) señalaron algún hecho de violencia por parte de la población en Bolivia.</p>
 
       <h4>Violencia en Bolivia por parte de la familia</h4>
       <div class="pie-chart-block" aria-label="Gráfico circular de Violencia en Bolivia por parte de la familia">
@@ -989,10 +996,10 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="pie-legend">
           <div><span class="pie-color" style="background:#0b6b9a;"></span>Ninguna: 99,4%</div><div><span class="pie-color" style="background:#f6a300;"></span>Discriminación: 0,3%</div><div><span class="pie-color" style="background:#ff3d12;"></span>Xenofobia: 0,1%</div><div><span class="pie-color" style="background:#7a8791;"></span>Extorsión: 0,1%</div>
         </div>
+
+      <p>La violencia familiar reportada en Bolivia es excepcional en términos cuantitativos: 1.356 casos (99,4 %) señalan ausencia de violencia. Los ocho registros restantes se concentran en discriminación, xenofobia y extorsión. Dado que este tipo de violencia puede estar subregistrado, conviene mantener canales seguros de identificación y acompañamiento.</p>
       </div>
 
-      
-      <p>Aunque los registros son reducidos, este tipo de violencia puede estar subregistrado; conviene mantener canales seguros de identificación y acompañamiento.</p>
     </div>
 
     <div class="stats-popup-section">
@@ -1004,9 +1011,9 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="pie-legend">
           <div><span class="pie-color" style="background:#0b6b9a;"></span>Alguna institución: 67,3%</div><div><span class="pie-color" style="background:#f6a300;"></span>Ninguna: 30,9%</div><div><span class="pie-color" style="background:#ff3d12;"></span>Población: 1,5%</div><div><span class="pie-color" style="background:#7a8791;"></span>Familia y amigos: 0,3%</div><div><span class="pie-color" style="background:#1097ad;"></span>Embajada: 0,0%</div>
         </div>
-      </div>
 
-      
+      <p>Durante el viaje, 918 personas (67,3 %) recibieron ayuda de alguna institución, mientras 422 (30,9 %) no recibieron ninguna. La casi inexistente participación de embajadas y el bajo peso de redes familiares o comunitarias evidencian una fuerte dependencia de organizaciones humanitarias y sociales para sostener la movilidad.</p>
+      </div>
 
       <h4>Tipo de ayuda durante el viaje</h4>
       <div class="pie-chart-block" aria-label="Gráfico circular de Tipo de ayuda durante el viaje">
@@ -1014,9 +1021,9 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="pie-legend">
           <div><span class="pie-color" style="background:#0b6b9a;"></span>Alimentación: 45,7%</div><div><span class="pie-color" style="background:#f6a300;"></span>Ninguna: 38,9%</div><div><span class="pie-color" style="background:#ff3d12;"></span>Hospedaje: 6,3%</div><div><span class="pie-color" style="background:#7a8791;"></span>Otro tipo: 5,9%</div><div><span class="pie-color" style="background:#1097ad;"></span>Ropa: 2,3%</div><div><span class="pie-color" style="background:#8b5cf6;"></span>Atención médica: 0,9%</div>
         </div>
-      </div>
 
-      
+      <p>La alimentación fue la ayuda más frecuente durante el viaje, con 623 registros (45,7 %), seguida a distancia por hospedaje (6,3 %) y otras ayudas (5,9 %). La estructura de la asistencia confirma que las necesidades inmediatas de supervivencia —principalmente alimentación y alojamiento— dominan la demanda humanitaria.</p>
+      </div>
 
       <h4>Ayuda recibida en Bolivia</h4>
       <div class="pie-chart-block" aria-label="Gráfico circular de Ayuda recibida en Bolivia">
@@ -1024,9 +1031,9 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="pie-legend">
           <div><span class="pie-color" style="background:#0b6b9a;"></span>Alguna institución: 54,3%</div><div><span class="pie-color" style="background:#f6a300;"></span>Ninguna: 42,2%</div><div><span class="pie-color" style="background:#ff3d12;"></span>Población: 3,4%</div><div><span class="pie-color" style="background:#7a8791;"></span>Embajada: 0,1%</div><div><span class="pie-color" style="background:#1097ad;"></span>Familia y amigos: 0,1%</div>
         </div>
-      </div>
 
-      
+      <p>En Bolivia, 740 personas (54,3 %) reportaron ayuda de alguna institución y 576 (42,2 %) ninguna ayuda. Aunque la cobertura institucional sigue siendo mayoritaria, la proporción sin apoyo es considerable y señala brechas de acceso, información o capacidad de respuesta.</p>
+      </div>
 
       <h4>Tipo de ayuda brindada en Bolivia</h4>
       <div class="pie-chart-block" aria-label="Gráfico circular de Tipo de ayuda brindada en Bolivia">
@@ -1034,10 +1041,10 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="pie-legend">
           <div><span class="pie-color" style="background:#0b6b9a;"></span>Ninguna: 44,7%</div><div><span class="pie-color" style="background:#f6a300;"></span>Hospedaje: 40,1%</div><div><span class="pie-color" style="background:#ff3d12;"></span>Alimentación: 7,4%</div><div><span class="pie-color" style="background:#7a8791;"></span>Otro tipo: 3,2%</div><div><span class="pie-color" style="background:#1097ad;"></span>Ropa: 3,0%</div><div><span class="pie-color" style="background:#8b5cf6;"></span>Atención médica: 1,6%</div>
         </div>
+
+      <p>El hospedaje es la principal ayuda brindada en Bolivia, con 547 casos (40,1 %), mientras 101 personas recibieron alimentación (7,4 %), 41 ropa (3,0 %) y 22 atención médica (1,6 %). La prioridad del alojamiento es coherente con la elevada situación de calle observada en el perfil.</p>
       </div>
 
-      
-      <p>La alta presencia de apoyo institucional demuestra que las organizaciones humanitarias constituyen una red de protección decisiva.</p>
     </div>
 
     <div class="stats-popup-section">
@@ -1049,10 +1056,10 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="pie-legend">
           <div><span class="pie-color" style="background:#0b6b9a;"></span>Situación de calle: 70,2%</div><div><span class="pie-color" style="background:#f6a300;"></span>Albergue o refugio: 8,9%</div><div><span class="pie-color" style="background:#ff3d12;"></span>Hospedaje individual: 7,0%</div><div><span class="pie-color" style="background:#7a8791;"></span>Alquiler individual: 6,4%</div><div><span class="pie-color" style="background:#1097ad;"></span>Hospedaje en grupo: 3,6%</div><div><span class="pie-color" style="background:#8b5cf6;"></span>Otro: 2,0%</div><div><span class="pie-color" style="background:#13a35b;"></span>Alquiler grupal: 1,9%</div>
         </div>
+
+      <p>La situación habitacional es extremadamente precaria: 957 personas (70,2 %) se encontraban en situación de calle. Las alternativas de albergue, alquiler y hospedaje reúnen proporciones mucho menores. Este resultado convierte la habitabilidad en un eje prioritario de protección, pues la calle amplifica riesgos de violencia, enfermedad, inseguridad alimentaria y pérdida de documentación.</p>
       </div>
 
-      
-      <p>La situación de calle es la expresión más crítica del perfil habitacional y amplifica riesgos de violencia, enfermedad, inseguridad alimentaria y pérdida de documentación.</p>
 
       <h4>Presencia de enfermedad</h4>
       <div class="pie-chart-block" aria-label="Gráfico circular de Presencia de enfermedad">
@@ -1060,122 +1067,25 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="pie-legend">
           <div><span class="pie-color" style="background:#0b6b9a;"></span>Sí: 32,0%</div><div><span class="pie-color" style="background:#f6a300;"></span>No: 68,0%</div>
         </div>
+
+      <p>Un total de 436 personas (32,0 %) declaró tener alguna enfermedad, mientras 928 (68,0 %) no reportaron enfermedad. La proporción de personas con necesidades de salud es significativa y adquiere mayor gravedad al combinarse con tránsito, irregularidad documental y precariedad habitacional.</p>
       </div>
 
-      
-
-      <h4>Antecedente de COVID-19</h4>
-      <div class="pie-chart-block" aria-label="Gráfico circular de Antecedente de COVID-19">
-        <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 3.2%, #f6a300 3.2% 100.0%);"></div>
-        <div class="pie-legend">
-          <div><span class="pie-color" style="background:#0b6b9a;"></span>Sí: 3,2%</div><div><span class="pie-color" style="background:#f6a300;"></span>No: 96,8%</div>
-        </div>
-      </div>
-
-      
-      <p>La baja cifra puede reflejar ausencia de diagnóstico, dificultades de acceso a pruebas o subregistro y debe interpretarse con cautela.</p>
-
-      <h4>Conocimiento de personas con COVID-19</h4>
-      <div class="pie-chart-block" aria-label="Gráfico circular de Conocimiento de personas con COVID-19">
-        <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 4.3%, #f6a300 4.3% 100.0%);"></div>
-        <div class="pie-legend">
-          <div><span class="pie-color" style="background:#0b6b9a;"></span>Sí: 4,3%</div><div><span class="pie-color" style="background:#f6a300;"></span>No: 95,7%</div>
-        </div>
-      </div>
-
-      
-
-      <h4>Medidas de prevención</h4>
-      <div class="pie-chart-block" aria-label="Gráfico circular de Medidas de prevención">
-        <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 87.5%, #f6a300 87.5% 99.0%, #ff3d12 99.0% 99.8%, #7a8791 99.8% 100.0%, #1097ad 100.0% 100.0%);"></div>
-        <div class="pie-legend">
-          <div><span class="pie-color" style="background:#0b6b9a;"></span>Otras medidas: 87,5%</div><div><span class="pie-color" style="background:#f6a300;"></span>Solo barbijo: 11,5%</div><div><span class="pie-color" style="background:#ff3d12;"></span>Gel o alcohol: 0,8%</div><div><span class="pie-color" style="background:#7a8791;"></span>Lavado de manos: 0,2%</div><div><span class="pie-color" style="background:#1097ad;"></span>Distanciamiento social: 0,0%</div>
-        </div>
-      </div>
-
-      
-      <p>La amplitud de la categoría “otras medidas” limita una interpretación precisa; se recomienda desagregarla en futuros registros.</p>
     </div>
 
     <div class="stats-popup-section">
-      <h3>Atención social e institucional</h3>
+      <h3>Autoidentificación indígena</h3>
 
-      <h4>Atenciones sociales registradas</h4>
-      
-      <p>El volumen de seguimientos, superior al número de atenciones iniciales, evidencia que una parte importante de los casos requiere intervención continuada. Las categorías representan registros de servicio, pueden superponerse y no deben sumarse como personas únicas.</p>
-
-      <h4>Atención y seguimiento legal</h4>
-      <div class="pie-chart-block" aria-label="Gráfico circular de Atención y seguimiento legal">
-        <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 56.2%, #f6a300 56.2% 100.0%);"></div>
+      <h4>Autoidentificación indígena</h4>
+      <div class="pie-chart-block" aria-label="Gráfico circular de Autoidentificación indígena">
+        <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 66.4%, #f6a300 66.4% 87.1%, #ff3d12 87.1% 100.0%);"></div>
         <div class="pie-legend">
-          <div><span class="pie-color" style="background:#0b6b9a;"></span>Atención legal: 56,2%</div><div><span class="pie-color" style="background:#f6a300;"></span>Seguimiento legal: 43,8%</div>
+          <div><span class="pie-color" style="background:#0b6b9a;"></span>No: 66,4%</div><div><span class="pie-color" style="background:#f6a300;"></span>Sí: 20,7%</div><div><span class="pie-color" style="background:#ff3d12;"></span>No responde: 12,9%</div>
         </div>
+
+      <p>La mayoría no se autoidentifica como indígena (906 personas; 66,4 %), mientras 282 (20,7 %) sí lo hacen y 176 (12,9 %) no responden. La proporción de autoidentificación indígena es suficientemente relevante para incorporar pertinencia cultural, enfoque intercultural y atención a posibles barreras lingüísticas o de discriminación.</p>
       </div>
 
-      
-      <p>Total operativo: 761 actuaciones jurídicas.</p>
-
-      <h4>Lugar de atención</h4>
-      <div class="pie-chart-block" aria-label="Gráfico circular de Lugar de atención">
-        <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 91.4%, #f6a300 91.4% 100.0%);"></div>
-        <div class="pie-legend">
-          <div><span class="pie-color" style="background:#0b6b9a;"></span>El Alto: 91,4%</div><div><span class="pie-color" style="background:#f6a300;"></span>La Paz: 8,6%</div>
-        </div>
-      </div>
-
-      
-      <p>Total: 1.482 registros de atención. Pueden existir múltiples intervenciones para una misma persona.</p>
-
-      <h4>Estado migratorio de las personas atendidas legalmente</h4>
-      <div class="pie-chart-block" aria-label="Gráfico circular de Estado migratorio de las personas atendidas legalmente">
-        <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 69.4%, #f6a300 69.4% 87.6%, #ff3d12 87.6% 94.8%, #7a8791 94.8% 99.9%, #1097ad 99.9% 99.9%);"></div>
-        <div class="pie-legend">
-          <div><span class="pie-color" style="background:#0b6b9a;"></span>Irregular: 69,4%</div><div><span class="pie-color" style="background:#f6a300;"></span>Regular: 18,2%</div><div><span class="pie-color" style="background:#ff3d12;"></span>Nacido en Bolivia: 7,2%</div><div><span class="pie-color" style="background:#7a8791;"></span>Solicitante de refugio: 5,1%</div><div><span class="pie-color" style="background:#1097ad;"></span>Refugiada/o: 0,0%</div>
-        </div>
-      </div>
-
-      
-
-      <h4>Tipo de atención legal</h4>
-      <div class="pie-chart-block" aria-label="Gráfico circular de Tipo de atención legal">
-        <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 98.4%, #f6a300 98.4% 99.8%, #ff3d12 99.8% 100.0%);"></div>
-        <div class="pie-legend">
-          <div><span class="pie-color" style="background:#0b6b9a;"></span>Orientación legal: 98,4%</div><div><span class="pie-color" style="background:#f6a300;"></span>Acompañamiento y asesoramiento: 1,4%</div><div><span class="pie-color" style="background:#ff3d12;"></span>Representación legal: 0,2%</div>
-        </div>
-      </div>
-
-      
-
-      <h4>Solicitudes y trámites jurídicos</h4>
-      <div class="pie-chart-block" aria-label="Gráfico circular de Solicitudes y trámites jurídicos">
-        <div class="pie-chart" style="background:conic-gradient(#0b6b9a 0.0% 66.4%, #f6a300 66.4% 75.7%, #ff3d12 75.7% 80.8%, #7a8791 80.8% 85.5%, #1097ad 85.5% 89.5%, #8b5cf6 89.5% 92.5%, #13a35b 92.5% 95.3%, #d946ef 95.3% 98.1%, #94a3b8 98.1% 100.0%);"></div>
-        <div class="pie-legend">
-          <div><span class="pie-color" style="background:#0b6b9a;"></span>Otros: 66,4%</div><div><span class="pie-color" style="background:#f6a300;"></span>Permanencia temp. familia: 9,3%</div><div><span class="pie-color" style="background:#ff3d12;"></span>Permanencia temp. trabajo: 5,1%</div><div><span class="pie-color" style="background:#7a8791;"></span>Duplicado C.I.: 4,7%</div><div><span class="pie-color" style="background:#1097ad;"></span>Solicitud refugio: 4,0%</div><div><span class="pie-color" style="background:#8b5cf6;"></span>Trámites consulado: 3,0%</div><div><span class="pie-color" style="background:#13a35b;"></span>Cert. nacimiento: 2,8%</div><div><span class="pie-color" style="background:#d946ef;"></span>Condonación multas: 2,8%</div><div><span class="pie-color" style="background:#94a3b8;"></span>Otros específicos: 1,9%</div>
-        </div>
-      </div>
-
-      
-      <p>La categoría “Otros” concentra el 66,4% de las solicitudes, por lo que se recomienda desagregarla en futuros sistemas de registro.</p>
-    </div>
-
-    <div class="stats-popup-section">
-      <h3>Lectura integral de resultados</h3>
-      <p>El perfil muestra una movilidad regional concentrada en población venezolana y colombiana, con predominio de personas en edades económicamente activas. La combinación entre juventud, responsabilidades familiares y trayectorias de tránsito prolongadas genera una demanda simultánea de protección, medios de vida, documentación y apoyo para la reunificación o sostenimiento familiar.</p>
-      <p>La irregularidad migratoria es el principal eje transversal de vulnerabilidad. Se relaciona con barreras documentales, exposición a controles, necesidad de orientación jurídica y dificultades de acceso a empleo formal, vivienda y servicios. La atención legal confirma esta presión: la mayoría de los casos se encontraba en situación irregular y casi toda la respuesta jurídica se concentró en orientación.</p>
-      <p>La dimensión de protección requiere especial atención. Más de la mitad reportó alguna forma de violencia por parte de la población durante el viaje, principalmente xenofobia, discriminación y robo. Aunque la violencia reportada en Bolivia es menor, persisten episodios de discriminación, robo y extorsión.</p>
-      <p>La situación de calle constituye la expresión más crítica del perfil habitacional: siete de cada diez personas se encontraban en esta condición. La alta presencia de apoyo institucional en ruta y en Bolivia demuestra el papel decisivo de las organizaciones humanitarias.</p>
-      <p>En salud, 436 personas (32,0%) declararon alguna enfermedad. Este dato, combinado con precariedad habitacional y movilidad continua, refuerza la necesidad de articulación con servicios públicos, atención primaria, referencia y seguimiento de casos prioritarios.</p>
-    </div>
-
-    <div class="stats-popup-section">
-      <h3>Prioridades estratégicas para la intervención</h3>
-      
-    </div>
-
-    <div class="stats-popup-section">
-      <h3>Consideraciones metodológicas</h3>
-      <p>Los porcentajes se calcularon sobre el total específico de cada tabla o indicador. La base general es de 1.364 personas; edad cuenta con 1.357 registros válidos; cuidado de hijos y envío de apoyo económico utilizan una base de 1.005 casos; los módulos de atención social, legal y lugar de atención corresponden a registros de servicios y pueden contener múltiples intervenciones para una misma persona.</p>
-      <p>Se conservaron las categorías y cantidades del documento fuente. Cuando existen diferencias entre universos, totales de atención o módulos, se presentan separadamente para evitar comparaciones incorrectas. Para futuras versiones se recomienda incorporar desagregación anual 2024/2025, cruces por género, edad, nacionalidad y situación migratoria, y una ficha técnica de la base de datos.</p>
     </div>
 
 ` }

@@ -6,7 +6,7 @@ const publicaciones = [
     categoria: "Sin Fronteras",
     seccion: "sinfronteras",
     resumen: "El Servicio Jesuita a Migrantes (SJM) presenta una nueva edición de su boletín institucional “Sin Fronteras”, donde te compartimos las principales actividades y reflexiones desarrolladas durante el primer trimestre de la gestión 2026.",
-    imagen: "img/notas/SF72026.png",
+    imagen: "img/notas/SFPortada.png",
     pdf: "pdf/SF72026.pdf"
   },
 
@@ -248,7 +248,7 @@ const publicaciones = [
     categoria: "Nota informativa",
     seccion: "notas",
     resumen: "Durante las exposiciones, los jóvenes identificaron problemáticas ambientales comunes, así como las distintas formas en que cada cultura comprende y protege este recurso esencial.",
-    imagen: "img/notas/NI32026.png",
+    imagen: "img/notas/NI3.png",
     pdf: "pdf/NOTA32026.pdf"
   },
 
@@ -259,7 +259,7 @@ const publicaciones = [
     categoria: "Nota informativa",
     seccion: "notas",
     resumen: "A través de una metodología participativa, el taller abordó la identidad cultural como un proceso dinámico, construido a partir de las experiencias, los vínculos familiares y la interacción con distintos entornos.",
-    imagen: "img/notas/NI22026.png",
+    imagen: "img/notas/NI2.png",
     pdf: "pdf/NOTA22026.pdf"
   },
 
@@ -281,7 +281,7 @@ const publicaciones = [
     categoria: "Nota informativa",
     seccion: "notas",
     resumen: "La actividad permitió a los estudiantes reflexionar sobre la relación entre cultura y naturaleza.",
-    imagen: "img/notas/NI12026.png",
+    imagen: "img/notas/NI1.png",
     pdf: "pdf/NOTA12026.pdf"
   },
 

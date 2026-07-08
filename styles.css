@@ -4091,3 +4091,243 @@ body.modal-open{
         font-size:12px !important;
     }
 }
+
+/* ========================================
+   TORTAS PERFIL MIGRATORIO
+======================================== */
+
+.stats-popup-body,
+.stats-popup-section {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.pie-chart-block {
+    display: grid;
+    grid-template-columns: 200px 230px minmax(0, 1fr);
+    align-items: center;
+    column-gap: 26px;
+    row-gap: 18px;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 26px 28px;
+    margin: 18px 0 30px;
+
+    background: #f7f9fb;
+    border: 1px solid #dfe7ee;
+    border-radius: 22px;
+
+    overflow: visible;
+}
+
+.pie-chart-block > * {
+    min-width: 0;
+}
+
+/* TORTA */
+
+.pie-chart {
+    width: 180px;
+    height: 180px;
+    min-width: 180px;
+    min-height: 180px;
+
+    border-radius: 50%;
+    position: relative;
+    justify-self: center;
+
+    box-shadow: 0 14px 28px rgba(15, 23, 42, 0.12);
+}
+
+.pie-chart::after {
+    content: "";
+    position: absolute;
+
+    width: 78px;
+    height: 78px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background: #ffffff;
+    border-radius: 50%;
+}
+
+/* LEYENDA */
+
+.pie-legend {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 9px;
+    width: 100%;
+}
+
+.pie-legend div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #14364a;
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.25;
+
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: normal;
+}
+
+.pie-color {
+    display: block;
+
+    width: 12px;
+    height: 12px;
+
+    min-width: 12px;
+    flex: 0 0 12px;
+
+    border-radius: 50%;
+}
+
+/* TEXTO DEL DOCUMENTO */
+
+.pie-chart-block > p {
+    margin: 0;
+
+    width: 100%;
+    max-width: none;
+
+    color: #383838;
+
+    font-size: 15.5px;
+    font-weight: 400;
+    line-height: 1.5;
+
+    text-align: justify;
+    text-justify: inter-word;
+
+    overflow-wrap: break-word;
+    word-break: normal;
+    hyphens: auto;
+
+    box-sizing: border-box;
+}
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 1000px) {
+
+    .pie-chart-block {
+        grid-template-columns: 180px minmax(0, 1fr);
+        gap: 22px;
+    }
+
+    .pie-chart-block > p {
+        grid-column: 1 / -1;
+        font-size: 15px;
+        line-height: 1.55;
+    }
+
+}
+
+/* ========================================
+   TELÉFONO
+======================================== */
+
+@media (max-width: 600px) {
+
+    .pie-chart-block {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+        gap: 18px;
+
+        padding: 18px 16px;
+        margin: 16px 0 26px;
+    }
+
+    .pie-chart {
+        width: 160px;
+        height: 160px;
+
+        min-width: 160px;
+        min-height: 160px;
+
+        align-self: center;
+    }
+
+    .pie-chart::after {
+        width: 68px;
+        height: 68px;
+    }
+
+    .pie-legend {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        column-gap: 14px;
+        row-gap: 10px;
+
+        width: 100%;
+    }
+
+    .pie-legend div {
+        font-size: 12.5px;
+        line-height: 1.25;
+
+        white-space: normal;
+        overflow-wrap: break-word;
+    }
+
+    .pie-color {
+        width: 11px;
+        height: 11px;
+
+        min-width: 11px;
+        flex-basis: 11px;
+    }
+
+    .pie-chart-block > p {
+        width: 100%;
+
+        font-size: 13.5px;
+        line-height: 1.55;
+
+        text-align: justify;
+
+        margin: 0;
+    }
+
+}
+
+/* TELÉFONOS MUY ESTRECHOS */
+
+@media (max-width: 370px) {
+
+    .pie-legend {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* JUSTIFICAR TEXTOS DEL PERFIL MIGRATORIO */
+
+.stats-popup-body p,
+.stats-popup-section p,
+.profile-popup-hero p,
+.pie-chart-block p {
+    text-align: justify !important;
+    text-justify: inter-word !important;
+    hyphens: auto !important;
+    overflow-wrap: break-word !important;
+    word-break: normal !important;
+}

@@ -7,7 +7,7 @@
     min-height: 280px;
     background:
         linear-gradient(rgba(8, 39, 55, 0.76), rgba(8, 39, 55, 0.76)),
-        url('img/publi3.jpg') center / cover no-repeat;
+        url('img/guiaportada.png') center / cover no-repeat;
     display: flex;
     align-items: center;
     padding: 0 90px;

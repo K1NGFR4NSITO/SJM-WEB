@@ -149,7 +149,7 @@ const publicaciones = [
     categoria: "Encuentros JRF",
     seccion: "encuentros-jrf",
     resumen: "Con el propósito de fortalecer la comprensión sobre la movilidad humana, la interculturalidad y el cuidado de la casa común, el Servicio Jesuita a Migrantes – Bolivia (SJM), mediante el programa Jóvenes Rompiendo Fronteras (JRF), desarrolló el taller Nuestras interacciones de cooperación, correspondiente al Nivel 2 del proceso formativo, con la participación de 86 estudiantes de sexto de secundaria de la Unidad Educativa Amor de Dios – Fe y Alegría, en la ciudad de El Alto. ",
-    imagen: "img/notas/EJRF42026.png",
+    imagen: "img/notas/E42026.png",
     pdf: "pdf/EncuentrosJRF4.pdf"
   },
 
@@ -171,7 +171,7 @@ const publicaciones = [
     categoria: "Encuentros JRF",
     seccion: "encuentros-jrf",
     resumen: "En medio de dinámicas, juegos, reflexiones y testimonios sinceros, adolescentes de las unidades educativas San Vicente de Paúl y Avelino Siñani compartieron una jornada de encuentro junto a migrantes venezolanos en el ex relleno sanitario de Mallasa, en una actividad impulsada por el programa Jóvenes Rompiendo Fronteras (JRF) del Servicio Jesuita a Migrantes Bolivia (SJM).",
-    imagen: "img/notas/EJRF32026.png",
+    imagen: "img/notas/E32026.png",
     pdf: "pdf/EncuentrosJRF3.pdf"
   },
 
@@ -182,7 +182,7 @@ const publicaciones = [
     categoria: "Encuentros JRF",
     seccion: "encuentros-jrf",
     resumen: "El Encuentro Intercultural “Tejiendo culturas, compartiendo saberes”, realizado el 28 de marzo e impulsado por el Servicio Jesuita a Migrantes (SJM), reunió a estudiantes de la Unidad Educativa San Vicente de Paúl del Nivel 3 y a personas migrantes, en una jornada de diálogo, integración y aprendizaje mutuo.",
-    imagen: "img/notas/EJRF22026.png",
+    imagen: "img/notas/E22026.png",
     pdf: "pdf/EncuentrosJRF2.pdf"
   },
 
@@ -270,7 +270,7 @@ const publicaciones = [
     categoria: "Encuentros JRF",
     seccion: "encuentros-jrf",
     resumen: "En la ciudad de El Alto, donde confluyen múltiples historias y culturas, se desarrolló el 21 de marzo una experiencia que permitió visibilizar el valor profundo de la diversidad como base para la convivencia social.",
-    imagen: "img/notas/EJRF12026.png",
+    imagen: "img/notas/E12026.png",
     pdf: "pdf/EncuentrosJRF1.pdf"
   },
 
@@ -336,7 +336,7 @@ const publicaciones = [
     categoria: "Encuentros JRF",
     seccion: "encuentros-jrf",
     resumen: "Dos grupos de estudiantes de 5to de secundaria de la U.E. María Teresa la Justicia participó del taller N° 6 que propuso el Programa Jóvenes Rompiendo Fronteras. Esta U.E. está en la Zona Cosmos 79 de la ciudad de El Alto.",
-    imagen: "img/notas/EJRF22025.png",
+    imagen: "img/notas/E22025.png",
     pdf: "pdf/EncuentrosJRF52024.pdf"
   },
 
@@ -347,7 +347,7 @@ const publicaciones = [
     categoria: "Encuentros JRF",
     seccion: "encuentros-jrf",
     resumen: "Seguimos caminando culturalmente, esta vez nuestros pasos nos llevaron a dos U.E. “Humberto Portocarrero” y “San Vicente de Paul”. Jóvenes Rompiendo Fronteras, JRF, realizó el taller 4 con estudiantes de 5to A y de 3ro C.",
-    imagen: "img/notas/EJRF12025.png",
+    imagen: "img/notas/E12025.png",
     pdf: "pdf/EncuentrosJRF42024.pdf"
   }
 
